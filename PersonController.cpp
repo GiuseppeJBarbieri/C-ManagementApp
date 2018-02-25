@@ -30,7 +30,13 @@ void PersonController :: start()
 
 void PersonController::createPerson(std::string firstName)
 {
-	PersonObjH::PersonObjH(firstName);
+	/*
+	cout << "\nIn PersonController class...\nCreatePerson function...\nObtained the first name:\t"
+		<< firstName << endl;
+		*/
+
+	PersonObjH p1(firstName);
+	p1.showPerson();
 
 }
 
