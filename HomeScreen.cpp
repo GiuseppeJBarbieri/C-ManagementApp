@@ -5,6 +5,8 @@
 
 using namespace std;
 
+//This will be the homescreen.
+//Here we will recieve a command from the user and determine what their trying to do.
 void HomeScreen::start()
 {
 	string firstName;
@@ -18,6 +20,8 @@ void HomeScreen::start()
 
 		switch (input)
 		{
+			//in this case when the user enters v it will create a reference for the CreatePersonScreen.cpp file located in the view folder.
+			//It then starts the createPerosnInstructions.
 		case 'v':
 		case 'V':
 			CreatePersonScreen * createPerson = new CreatePersonScreen();

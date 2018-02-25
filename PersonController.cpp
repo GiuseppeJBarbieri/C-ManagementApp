@@ -28,6 +28,9 @@ void PersonController :: start()
 }
 */
 
+//Here the function takes the firstName entered by the user and creates a new perosn object
+//The person object is then submitted to the console.
+
 void PersonController::createPerson(std::string firstName)
 {
 	/*

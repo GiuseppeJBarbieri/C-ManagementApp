@@ -2,7 +2,9 @@
 #include <iostream>
 int main()
 {
+	//Create reference for the home screen
 	HomeScreen * app = new HomeScreen();
+	//uses the start method from HomeScreen.cpp which is located in the view folder.
 	app->start();	
 	return 0;
 }
