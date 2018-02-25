@@ -1,25 +1,19 @@
-#include <iostream>
-#include "PersonObjH.h"
+//#include <iostream>
+//#include "PersonObjH.h"
 
-using namespace std;
+#include "PersonController.h"
 
 int main()
 {
-
-
-
-
-
-	return 0;
-	/*
-	PersonObjH person1("Giuseppe");
-	person1.showPerson();
-	PersonObjH person2("Gto");
-	person2.showPerson();
-	PersonObjH person3("Caprice");
-	person3.showPerson();
-
-	system("pause");
-	return 0;
-	*/	
+	//The new operator only gets used when your creating a reference to a pointer
+	// * Creating a pointer of PersonController type
+	PersonController * app = new PersonController();
+	//Calling start method
+	//app selector start()
+	//So when you are using a pointer
+	//You cant simply just call the
+	//. operator you have to either use the selector operator or
+	//dereference and catch that option and then use the dot operator
+	app->start();
+	
 }
