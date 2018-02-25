@@ -20,9 +20,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="App.cpp" />
+    <ClCompile Include="CreatePersonScreen.cpp" />
+    <ClCompile Include="HomeScreen.cpp" />
+    <ClCompile Include="PersonController.cpp" />
     <ClCompile Include="PersonObj.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CreatePersonScreen.h" />
+    <ClInclude Include="HomeScreen.h" />
+    <ClInclude Include="PersonController.h" />
     <ClInclude Include="PersonObjH.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

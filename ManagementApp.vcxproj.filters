@@ -5,26 +5,54 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    <Filter Include="Controller">
+      <UniqueIdentifier>{86ec15b7-6218-4af0-a5fb-1507fbbb3cff}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Model">
+      <UniqueIdentifier>{aa7723e2-01d6-4423-b860-26e19fa4bf47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model Headers">
+      <UniqueIdentifier>{c9e44ebf-ef7b-45ca-b891-db98b58be45d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controller Headers">
+      <UniqueIdentifier>{f93c55e5-9687-4509-b85b-2c1cd1e8a0b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View">
+      <UniqueIdentifier>{3e9a200c-796f-40ee-9221-c9a52275e8c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View Headers">
+      <UniqueIdentifier>{183a8a26-f3e6-4d27-9942-9586fcddc7ca}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="App.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="PersonController.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
     <ClCompile Include="PersonObj.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="HomeScreen.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="CreatePersonScreen.cpp">
+      <Filter>View</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="PersonController.h">
+      <Filter>Controller Headers</Filter>
+    </ClInclude>
     <ClInclude Include="PersonObjH.h">
-      <Filter>Source Files</Filter>
+      <Filter>Model Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="HomeScreen.h">
+      <Filter>View Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="CreatePersonScreen.h">
+      <Filter>View Headers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

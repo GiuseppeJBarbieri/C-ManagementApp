@@ -1,6 +1,8 @@
 #ifndef PersonController_h
 #define PersonController_h
 
+#include "PersonObjH.h"
+
 class PersonController
 {
 	//Start method inside the class definition file(header)
@@ -11,7 +13,8 @@ public:
 	 * it defines for the class that there is a method called start thats part of the class personcontroller
 	 * and gets the information ready to go
 	*/
-	void start();
+	void createPerson(std::string firstName);
+	PersonObjH getPerson();
 };
 
 #endif /* PersonController_h */

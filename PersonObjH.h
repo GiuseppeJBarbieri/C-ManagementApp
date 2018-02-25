@@ -14,5 +14,4 @@ public:
 	std::string getFirstName();
 	void setFirstName(std::string firstName);
 	void showPerson();
-
 };
