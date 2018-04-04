@@ -33,17 +33,13 @@ void PersonController :: start()
 
 void PersonController::createPerson(string firstName)
 {
-	/*
-	cout << "\nIn PersonController class...\nCreatePerson function...\nObtained the first name:\t"
-		<< firstName << endl;
-		*/
 	PersonObjH p1(firstName);
 	p1.showPerson();
 	p1.storePerson(firstName);
-
 }
 
 PersonObjH PersonController::getPerson()
 {
+	PersonObjH::loadDB();
 	return PersonObjH();
 }

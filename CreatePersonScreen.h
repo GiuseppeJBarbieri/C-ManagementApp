@@ -5,6 +5,7 @@ class CreatePersonScreen
 {
 public:
 	void createPersonInstructions();
+	void loadPersonFromFile();
 };
 
 #endif // !CreatePersonScreen_h

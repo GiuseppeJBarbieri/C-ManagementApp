@@ -20,3 +20,10 @@ void CreatePersonScreen::createPersonInstructions()
 	pc->createPerson(firstName);
 	system("Pause");
 }
+
+void CreatePersonScreen::loadPersonFromFile()
+{
+	PersonController * pc = new PersonController();
+	pc->getPerson();
+}
+

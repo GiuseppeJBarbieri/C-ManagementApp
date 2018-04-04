@@ -14,18 +14,21 @@ void HomeScreen::start()
 
 	while (true)
 	{
-		cout << "Please enter V to view the database...\t" << endl;
-		char input;
+		CreatePersonScreen * createPerson = new CreatePersonScreen();
+		cout << "1. Add to the database\n";
+		cout << "2. Load the database\n";
+		int input;
 		cin >> input;
 
 		switch (input)
 		{
 			//in this case when the user enters v it will create a reference for the CreatePersonScreen.cpp file located in the view folder.
 			//It then starts the createPerosnInstructions.
-		case 'v':
-		case 'V':
-			CreatePersonScreen * createPerson = new CreatePersonScreen();
+		case 1:
 			createPerson->createPersonInstructions();
+			break;
+		case 2:
+			createPerson->loadPersonFromFile();
 			break;
 		
 		}

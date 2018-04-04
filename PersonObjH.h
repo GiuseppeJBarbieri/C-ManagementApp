@@ -18,7 +18,7 @@ public:
 	void setFirstName(std::string firstName);
 	void showPerson();
 	void storePerson(string firstName);
-	void loadDB();
+	void static loadDB();
 
 
 };

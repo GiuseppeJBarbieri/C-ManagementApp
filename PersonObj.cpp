@@ -10,7 +10,7 @@ using namespace std;
 
 static int _id = 0;
 
-PersonObjH::PersonObjH() : id(_id++) { }
+PersonObjH::PersonObjH() : id(_id) { }
 
 PersonObjH::PersonObjH(std::string firstName) : id(_id++), firstName(firstName) {  }
 
@@ -32,11 +32,11 @@ void PersonObjH::showPerson()
 {
 	std::cout << "ID: " << getId() << " | The first name is: " << getFirstName() << std::endl;
 }
-
+//I need to load the file and get the last id used and saved it to the new person
 void PersonObjH::storePerson(string firstName)
 {
 	fstream fileOut;
-	fileOut.open("dataBase.txt", fstream::app);
+	fileOut.open("DataBase.txt", fstream::app);
 
 	if (fileOut.is_open())
 	{
@@ -45,11 +45,20 @@ void PersonObjH::storePerson(string firstName)
 
 	}
 	fileOut.close();
-
 }
 
 void PersonObjH::loadDB()
 {
+	fstream outFile;
+	outFile.open("DataBase.txt", fstream::in);
+	string line;
 
+	if (outFile.is_open())
+	{
+		while (getline(outFile, line))
+		{
+			cout << line << "\n";
+		}
+	}
 }
 
