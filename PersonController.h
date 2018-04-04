@@ -13,6 +13,7 @@ public:
 	 * it defines for the class that there is a method called start thats part of the class personcontroller
 	 * and gets the information ready to go
 	*/
+	//void start();
 	void createPerson(std::string firstName);
 	PersonObjH getPerson();
 };

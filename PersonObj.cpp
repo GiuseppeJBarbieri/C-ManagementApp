@@ -1,5 +1,12 @@
 #include "PersonObjH.h"
 #include <iostream>
+#include <string>
+#include <cctype>
+#include <fstream>
+#include <sstream>
+
+using namespace std;
+
 
 static int _id = 0;
 
@@ -25,3 +32,24 @@ void PersonObjH::showPerson()
 {
 	std::cout << "ID: " << getId() << " | The first name is: " << getFirstName() << std::endl;
 }
+
+void PersonObjH::storePerson(string firstName)
+{
+	fstream fileOut;
+	fileOut.open("dataBase.txt", fstream::app);
+
+	if (fileOut.is_open())
+	{
+		fileOut << getId() << ":" << firstName << "\n";
+		cout << "Saved\n";
+
+	}
+	fileOut.close();
+
+}
+
+void PersonObjH::loadDB()
+{
+
+}
+

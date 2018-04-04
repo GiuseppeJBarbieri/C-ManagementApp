@@ -1,5 +1,8 @@
 #pragma once
+#include <iostream>
 #include <string>
+
+using namespace std;
 
 class PersonObjH
 {
@@ -14,4 +17,8 @@ public:
 	std::string getFirstName();
 	void setFirstName(std::string firstName);
 	void showPerson();
+	void storePerson(string firstName);
+	void loadDB();
+
+
 };
