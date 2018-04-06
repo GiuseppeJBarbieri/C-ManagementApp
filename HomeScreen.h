@@ -5,6 +5,7 @@ class HomeScreen
 {
 public:
 	void start();
+	void displayName();
 };
 
 #endif // !HomeScreen_h
