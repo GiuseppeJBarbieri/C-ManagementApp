@@ -1,5 +1,7 @@
 #include "Edit_Cars_Main.h"
 #include "Utilities.h"
+#include "EditDatabaseController.h"
+
 #include <string>
 #include <iostream>
 
@@ -7,6 +9,7 @@ using namespace std;
 
 void Edit_Cars_Main::editCarsMenu()
 {
+	int selection;
 	system("CLS");
 	gotoxy(50, 9);
 	cout << "\tEDIT VEHICLES\n";
@@ -19,5 +22,46 @@ void Edit_Cars_Main::editCarsMenu()
 	gotoxy(50, 13);
 	cout << "3. Buy Vehicle\n";
 	gotoxy(50, 14);
+
+	cin >> selection;
+	getSelection(selection);
 	system("pause");
+}
+
+void Edit_Cars_Main::getSelection(int selection)
+{
+	string make = "Pontiac";
+	string model = "GTO";
+	string year = "2006";
+	string type = "Sport";
+	string driveline = "rwd";
+	string enginetype = "V8";
+	string enginesize = "6.0L";
+	int pricepurchased = 15500;
+	string daterecieved = "4/7/1995";
+
+
+	switch (selection)
+	{
+	case 1:
+	case 2:
+	case 3:
+		cout << "Please enter the info(make, model, year, type, drieline, enginetype enginesize, pricePurchased, dataRecieved" << endl;
+/*
+		cin >> make;
+		cin >> model;
+		cin >> year;
+		cin >> type;
+		cin >> driveline;
+		cin >> enginetype;
+		cin >> enginesize;
+		cin >> pricepurchased;
+		cin >> daterecieved;
+*/
+		EditDatabaseController::buyVehicle(make, model, year, type, driveline, enginetype, enginesize, pricepurchased, daterecieved);
+
+		break;
+	default:
+		break;
+	}
 }

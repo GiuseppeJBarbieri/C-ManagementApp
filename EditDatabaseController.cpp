@@ -10,9 +10,11 @@
 #include "EditDatabaseController.h"
 #include "CarModel.h"
 #include "BuyVehicleController.h"
+
 #include <string>
 
 using namespace std;
+static int id = 0;
 
 void EditDatabaseController::createId()
 {
@@ -25,7 +27,8 @@ void EditDatabaseController::createId()
 void EditDatabaseController::buyVehicle(string make, string model, string year, string type, string driveline, string enginetype, string enginesize, double pricePurchased, string dateRecieved)
 {
 	createId();
-
+	BuyVehicleController::addCarModel(id, make, model, year);
+	BuyVehicleController::showCarModel();
 }
 
 void EditDatabaseController::sellVehicle()

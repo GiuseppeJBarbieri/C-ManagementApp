@@ -16,14 +16,14 @@ void CreatePersonScreen::createPersonInstructions()
 	string firstName;
 	cout << "Please enter the first name... ";
 	cin >> firstName;
-	PersonController * pc = new PersonController();
+	BuyVehicleController * pc = new BuyVehicleController();
 	pc->createPerson(firstName);
 	system("Pause");
 }
 
 void CreatePersonScreen::loadPersonFromFile()
 {
-	PersonController * pc = new PersonController();
+	BuyVehicleController * pc = new BuyVehicleController();
 	pc->getPerson();
 }
 

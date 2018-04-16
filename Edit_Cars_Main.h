@@ -5,6 +5,7 @@ class Edit_Cars_Main
 {
 public:
 	void editCarsMenu();
+	void getSelection(int selection);
 };
 
 #endif 

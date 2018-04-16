@@ -31,14 +31,14 @@ void PersonController :: start()
 //Here the function takes the firstName entered by the user and creates a new perosn object
 //The person object is then submitted to the console.
 
-void PersonController::createPerson(string firstName)
+void BuyVehicleController::createPerson(string firstName)
 {
 	PersonObjH p1(firstName);
 	p1.showPerson();
 	p1.storePerson(firstName);
 }
 
-PersonObjH PersonController::getPerson()
+PersonObjH BuyVehicleController::getPerson()
 {
 	PersonObjH::loadDB();
 	return PersonObjH();

@@ -7,14 +7,16 @@
 
 using namespace std;
 
-class PersonController
+class BuyVehicleController
 {
 private:
 	int id = 0;
 public:
-	void addCarModel(int id, string make, string model, string year);
-	void addCarInfoModel(int id, string type, string driveLine, string engineType, string engineSize);
-	void addCarPriceInfoModel();
+	static void addCarModel(int id, string make, string model, string year);
+	static void addCarInfoModel(int id, string type, string driveLine, string engineType, string engineSize);
+	static void addCarPriceInfoModel();
+
+	static void showCarModel();
 };
 
 #endif // !BuyVehicleController_h
