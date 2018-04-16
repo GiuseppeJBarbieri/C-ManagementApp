@@ -20,16 +20,38 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="App.cpp" />
+    <ClCompile Include="BuyVehicleController.cpp" />
+    <ClCompile Include="CarInfoModel.cpp" />
+    <ClCompile Include="CarModel.cpp" />
+    <ClCompile Include="CarPriceInfoModel.cpp" />
     <ClCompile Include="CreatePersonScreen.cpp" />
+    <ClCompile Include="CustomerInfoModel.cpp" />
+    <ClCompile Include="Customer_Information_Main.cpp" />
+    <ClCompile Include="EditDatabaseController.cpp" />
+    <ClCompile Include="Edit_Cars_Main.cpp" />
     <ClCompile Include="HomeScreen.cpp" />
     <ClCompile Include="PersonController.cpp" />
     <ClCompile Include="PersonObj.cpp" />
+    <ClCompile Include="Sales_invoice_Main.cpp" />
+    <ClCompile Include="Utilities.cpp" />
+    <ClCompile Include="View_Cars_Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BuyVehicleController.h" />
+    <ClInclude Include="CarInfoModel.h" />
+    <ClInclude Include="CarModel.h" />
+    <ClInclude Include="CarPriceInfoModel.h" />
     <ClInclude Include="CreatePersonScreen.h" />
+    <ClInclude Include="CustomerInfoModel.h" />
+    <ClInclude Include="Customer_Information_Main.h" />
+    <ClInclude Include="EditDatabaseController.h" />
+    <ClInclude Include="Edit_Cars_Main.h" />
     <ClInclude Include="HomeScreen.h" />
     <ClInclude Include="PersonController.h" />
     <ClInclude Include="PersonObjH.h" />
+    <ClInclude Include="Sales_Invoice_Main.h" />
+    <ClInclude Include="Utilities.h" />
+    <ClInclude Include="View_Cars_Main.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

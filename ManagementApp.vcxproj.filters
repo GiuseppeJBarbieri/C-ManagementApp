@@ -5,17 +5,11 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Controller">
-      <UniqueIdentifier>{86ec15b7-6218-4af0-a5fb-1507fbbb3cff}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Model">
       <UniqueIdentifier>{aa7723e2-01d6-4423-b860-26e19fa4bf47}</UniqueIdentifier>
     </Filter>
     <Filter Include="Model Headers">
       <UniqueIdentifier>{c9e44ebf-ef7b-45ca-b891-db98b58be45d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Controller Headers">
-      <UniqueIdentifier>{f93c55e5-9687-4509-b85b-2c1cd1e8a0b2}</UniqueIdentifier>
     </Filter>
     <Filter Include="View">
       <UniqueIdentifier>{3e9a200c-796f-40ee-9221-c9a52275e8c3}</UniqueIdentifier>
@@ -23,13 +17,25 @@
     <Filter Include="View Headers">
       <UniqueIdentifier>{183a8a26-f3e6-4d27-9942-9586fcddc7ca}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Main Controllers">
+      <UniqueIdentifier>{86ec15b7-6218-4af0-a5fb-1507fbbb3cff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main Controller Headers">
+      <UniqueIdentifier>{f93c55e5-9687-4509-b85b-2c1cd1e8a0b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Edit Database Controllers">
+      <UniqueIdentifier>{2308721a-e46f-4f7d-aa5e-b165136b34d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Edit Database Controller headers">
+      <UniqueIdentifier>{d0bd8e60-d63a-4457-8420-c5c34a3b20ee}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="App.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="PersonController.cpp">
-      <Filter>Controller</Filter>
+      <Filter>Main Controllers</Filter>
     </ClCompile>
     <ClCompile Include="PersonObj.cpp">
       <Filter>Model</Filter>
@@ -40,10 +46,43 @@
     <ClCompile Include="CreatePersonScreen.cpp">
       <Filter>View</Filter>
     </ClCompile>
+    <ClCompile Include="View_Cars_Main.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="Edit_Cars_Main.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="Sales_invoice_Main.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="Customer_Information_Main.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CarModel.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomerInfoModel.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="CarPriceInfoModel.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="CarInfoModel.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="EditDatabaseController.cpp">
+      <Filter>Main Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="BuyVehicleController.cpp">
+      <Filter>Edit Database Controllers</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PersonController.h">
-      <Filter>Controller Headers</Filter>
+      <Filter>Main Controller Headers</Filter>
     </ClInclude>
     <ClInclude Include="PersonObjH.h">
       <Filter>Model Headers</Filter>
@@ -53,6 +92,39 @@
     </ClInclude>
     <ClInclude Include="CreatePersonScreen.h">
       <Filter>View Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Customer_Information_Main.h">
+      <Filter>View Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Edit_Cars_Main.h">
+      <Filter>View Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Sales_Invoice_Main.h">
+      <Filter>View Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="View_Cars_Main.h">
+      <Filter>View Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CarModel.h">
+      <Filter>Model Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomerInfoModel.h">
+      <Filter>Model Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="CarPriceInfoModel.h">
+      <Filter>Model Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="CarInfoModel.h">
+      <Filter>Model Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="EditDatabaseController.h">
+      <Filter>Main Controller Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="BuyVehicleController.h">
+      <Filter>Edit Database Controller headers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
