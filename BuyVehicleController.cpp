@@ -21,9 +21,8 @@ void BuyVehicleController::addCarModel(int id, string make, string model, string
 	CarModel car(id, make, model, year);
 	ofstream ofs("carmodel.ros", ios::binary);
 	ofs.write((char *)&car, sizeof(CarModel));
-	
-	cout << "Buy vehicle Controller showing model...\n";
 	ofs.close();
+	cout << "Buy vehicle Controller showing model...\n";	
 	car.showCar();
 }
 
@@ -31,7 +30,7 @@ void BuyVehicleController::addCarInfoModel(int id, string type, string driveLine
 {
 	CarInfoModel carInfoModel(id, type, driveLine, engineType, engineSize);
 }
-
+//This function is used to show the information from the binary file but it gives me an access violation error
 void BuyVehicleController::showCarModel()
 {
 	cout << "Show Car Model method in buy vehicle controller showing model from binary file....\n";
