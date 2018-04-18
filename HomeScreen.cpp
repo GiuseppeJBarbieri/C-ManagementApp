@@ -5,6 +5,7 @@
 #include "Edit_Cars_Main.h"
 #include "Sales_Invoice_Main.h"
 #include "Customer_Information_Main.h"
+#include "Review_Page.h"
 #include <windows.h>
 
 #include <string>
@@ -28,6 +29,7 @@ void HomeScreen::start()
 		Edit_Cars_Main * editCarsScreen = new Edit_Cars_Main();
 		Sales_Invoice_Main * salesInvoiceScreen = new Sales_Invoice_Main();
 		Customer_Information_Main * customerInfoScreen = new Customer_Information_Main();
+		Review_Page * reviewPage = new Review_Page();
 		gotoxy(50, 10);
 		cout << "Hello and welcome to the project" << endl;
 		gotoxy(50, 11);
@@ -39,6 +41,8 @@ void HomeScreen::start()
 		gotoxy(50, 14);
 		cout << "4. Customer/Employee Information                  \n";
 		gotoxy(50, 15);
+		cout << "5. Review Page\n";
+		gotoxy(50, 16);
 		int input;
 		cin >> input;	
 
@@ -65,6 +69,11 @@ void HomeScreen::start()
 			break;
 		case 4:
 			customerInfoScreen->customerInfoMenu();
+			gotoxy(50, 15);
+			cout << "                                  ";
+			break;
+		case 5:
+			reviewPage->showReviewPage();
 			gotoxy(50, 15);
 			cout << "                                  ";
 			break;

@@ -20,7 +20,8 @@ void BuyVehicleController::addCarModel(int id, string make, string model, string
 {
 	CarModel car(id, make, model, year);
 	ofstream ofs("carmodel.ros", ios::binary);
-	ofs.write((char *)&car, sizeof(car));
+	ofs.write((char *)&car, sizeof(CarModel));
+	
 	cout << "Buy vehicle Controller showing model...\n";
 	ofs.close();
 	car.showCar();
@@ -34,10 +35,12 @@ void BuyVehicleController::addCarInfoModel(int id, string type, string driveLine
 void BuyVehicleController::showCarModel()
 {
 	cout << "Show Car Model method in buy vehicle controller showing model from binary file....\n";
-	CarModel car;
-	ifstream ifs("carmodel.ros", ios::binary);
-	ifs.read((char *)&car, sizeof(car));
+	CarModel car3;
+	ifstream ifs("carmodel.ros", ios::in|ios::binary);
+	while (ifs.read((char *)&car3, sizeof(CarModel)))
+		ifs.close();
+	
 	ifs.close();
-	car.showCar();
+	car3.showCar();
 }
 

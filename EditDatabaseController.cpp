@@ -28,7 +28,7 @@ void EditDatabaseController::buyVehicle(string make, string model, string year, 
 {
 	createId();
 	BuyVehicleController::addCarModel(id, make, model, year);
-	BuyVehicleController::showCarModel();
+	//BuyVehicleController::showCarModel();
 }
 
 void EditDatabaseController::sellVehicle()
