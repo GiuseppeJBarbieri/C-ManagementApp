@@ -11,6 +11,7 @@
 #include "CarModel.h"
 #include "CarInfoModel.h"
 
+<<<<<<< HEAD
 #include <fstream>;
 #include <iostream>
 
@@ -23,13 +24,19 @@ void BuyVehicleController::addCarModel(int id, char make[], char model[], char y
 	ofs.write((char *)&car, sizeof(car));
 	cout << "Buy vehicle Controller showing model...\n";
 	ofs.close();
+=======
+void PersonController::addCarModel(int id, string make, string model, string year)
+{
+	CarModel carModel(id, make, model, year);
+>>>>>>> parent of 48d3cc7... Buying vehicles Controllers updated
 }
 
-void BuyVehicleController::addCarInfoModel(int id, string type, string driveLine, string engineType, string engineSize)
+void PersonController::addCarInfoModel(int id, string type, string driveLine, string engineType, string engineSize)
 {
 	CarInfoModel carInfoModel(id, type, driveLine, engineType, engineSize);
 }
 
+<<<<<<< HEAD
 void BuyVehicleController::showCarModel()
 {
 	cout << "Show Car Model method in buy vehicle controller showing model from binary file....\n";
@@ -46,3 +53,5 @@ void BuyVehicleController::showCarModel()
 	car.showCar();
 }
 
+=======
+>>>>>>> parent of 48d3cc7... Buying vehicles Controllers updated

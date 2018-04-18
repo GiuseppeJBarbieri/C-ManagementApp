@@ -3,7 +3,7 @@
 
 #include "PersonObjH.h"
 
-class BuyVehicleController
+class PersonController
 {
 	//Start method inside the class definition file(header)
 	//Where we define the class.

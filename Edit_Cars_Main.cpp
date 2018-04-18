@@ -1,7 +1,5 @@
 #include "Edit_Cars_Main.h"
 #include "Utilities.h"
-#include "EditDatabaseController.h"
-
 #include <string>
 #include <iostream>
 
@@ -9,7 +7,6 @@ using namespace std;
 
 void Edit_Cars_Main::editCarsMenu()
 {
-	int selection;
 	system("CLS");
 	gotoxy(50, 9);
 	cout << "\tEDIT VEHICLES\n";
@@ -22,11 +19,9 @@ void Edit_Cars_Main::editCarsMenu()
 	gotoxy(50, 13);
 	cout << "3. Buy Vehicle\n";
 	gotoxy(50, 14);
-
-	cin >> selection;
-	getSelection(selection);
 	system("pause");
 }
+<<<<<<< HEAD
 
 void Edit_Cars_Main::getSelection(int selection)
 {
@@ -65,3 +60,5 @@ void Edit_Cars_Main::getSelection(int selection)
 		break;
 	}
 }
+=======
+>>>>>>> parent of 48d3cc7... Buying vehicles Controllers updated
