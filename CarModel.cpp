@@ -13,7 +13,7 @@ using namespace std;
 
 CarModel::CarModel() { }
 
-CarModel::CarModel(int id, char *make, char *model, char *year) : id(id), make(model), model(model), year(year) { }
+CarModel::CarModel(int id, char *make, char *model, char *year) : id(id), make(make), model(model), year(year) { }
 
 void CarModel::showCar()
 {

@@ -20,13 +20,13 @@ class CarModel
 {
 private:
 	int id;
-	char *make;
-	char *model;
-	char *year;
+	char make[];
+	char model[];
+	char year[];
 
 public :
 	CarModel();
-	CarModel(int id, char make[], char model[], char year[]);
+	CarModel(int id, char *make, char *model, char *year);
 	void showCar();
 };
 #endif // !CarModel_h

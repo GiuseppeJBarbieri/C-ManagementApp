@@ -1,6 +1,7 @@
 #include "View_Cars_Main.h"
 #include"HomeScreen.h"
 #include "Utilities.h"
+#include "BuyVehicleController.h"
 #include <string>
 #include <iostream>
 
@@ -18,5 +19,11 @@ void View_Cars_Main::viewCarsMenu()
 	gotoxy(50, 12);
 	cout << "2. Search Cars\n";
 	gotoxy(50, 14);
+	int selection;
+	cin >> selection;
+	if (selection == 1)
+	{
+		BuyVehicleController::showCarModel();
+	}
 	system("pause");
 }
