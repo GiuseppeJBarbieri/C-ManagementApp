@@ -12,7 +12,7 @@ class BuyVehicleController
 private:
 	int id = 0;
 public:
-	static void addCarModel(int id, string make, string model, string year);
+	static void addCarModel(int id, char *make, char *model, char *year);
 	static void addCarInfoModel(int id, string type, string driveLine, string engineType, string engineSize);
 	static void addCarPriceInfoModel();
 

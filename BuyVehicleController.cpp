@@ -16,7 +16,7 @@
 
 using namespace std;
 
-void BuyVehicleController::addCarModel(int id, string make, string model, string year)
+void BuyVehicleController::addCarModel(int id, char *make, char *model, char *year)
 {
 	CarModel car(id, make, model, year);
 	ofstream ofs("carmodel.ros", ios::binary);

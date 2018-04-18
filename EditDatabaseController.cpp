@@ -24,7 +24,7 @@ void EditDatabaseController::createId()
 //If I'm buying im going to need to create an id..
 //Take in make, model, year, type, driveline, enginetype, enginesize, pricePurchased, dateRecieved
 
-void EditDatabaseController::buyVehicle(string make, string model, string year, string type, string driveline, string enginetype, string enginesize, double pricePurchased, string dateRecieved)
+void EditDatabaseController::buyVehicle(char *make, char *model, char *year, string type, string driveline, string enginetype, string enginesize, double pricePurchased, string dateRecieved)
 {
 	createId();
 	BuyVehicleController::addCarModel(id, make, model, year);

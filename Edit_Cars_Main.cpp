@@ -30,9 +30,9 @@ void Edit_Cars_Main::editCarsMenu()
 
 void Edit_Cars_Main::getSelection(int selection)
 {
-	string make = "Pontiac";
-	string model = "GTO";
-	string year = "2006";
+	char *make = "Pontiac";
+	char *model = "GTO";
+	char *year = "2006";
 	string type = "Sport";
 	string driveline = "rwd";
 	string enginetype = "V8";
