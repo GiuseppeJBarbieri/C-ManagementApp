@@ -43,6 +43,8 @@ void HomeScreen::start()
 		gotoxy(50, 15);
 		cout << "5. Review Page\n";
 		gotoxy(50, 16);
+		cout << "6. Exit Application                               \n";
+		gotoxy(50, 17);
 		int input;
 		cin >> input;	
 
@@ -53,31 +55,35 @@ void HomeScreen::start()
 		case 1:
 			//createPerson->createPersonInstructions();
 			viewCarsScreen->viewCarsMenu();
-			gotoxy(50, 15);
+			gotoxy(50, 18);
 			cout << "                                  ";
 			break;
 		case 2:
 			//createPerson->loadPersonFromFile();
 			editCarsScreen->editCarsMenu();
-			gotoxy(50, 15);
+			gotoxy(50, 18);
 			cout << "                                  ";
 			break;
 		case 3:			
 			salesInvoiceScreen->salesInvoiceMenu();
-			gotoxy(50, 15);
+			gotoxy(50, 18);
 			cout << "                                  ";
 			break;
 		case 4:
 			customerInfoScreen->customerInfoMenu();
-			gotoxy(50, 15);
+			gotoxy(50, 18);
 			cout << "                                  ";
 			break;
 		case 5:
 			reviewPage->showReviewPage();
-			gotoxy(50, 15);
+			gotoxy(50, 18);
 			cout << "                                  ";
 			break;
+		case 6:
+			exit(0);
+			break;
 		}
+		
 		
 	}
 	system("Pause");

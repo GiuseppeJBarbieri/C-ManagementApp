@@ -29,6 +29,15 @@
     <Filter Include="Edit Database Controller headers">
       <UniqueIdentifier>{d0bd8e60-d63a-4457-8420-c5c34a3b20ee}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ReviewPage">
+      <UniqueIdentifier>{c6c54604-7320-42c4-a368-5a4cec492123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ViewCarLotControllers">
+      <UniqueIdentifier>{677c258d-7dc8-4019-8b67-ceed4bb32551}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ViewCarLotControllersHeaders">
+      <UniqueIdentifier>{0f2bf197-dbcd-4fbd-b2bf-76cf4baec8c0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="App.cpp">
@@ -79,6 +88,18 @@
     <ClCompile Include="BuyVehicleController.cpp">
       <Filter>Edit Database Controllers</Filter>
     </ClCompile>
+    <ClCompile Include="Review_Page.cpp">
+      <Filter>ReviewPage</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewCarLotController.cpp">
+      <Filter>Main Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewAllCarsScreen.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewAllVehicleController.cpp">
+      <Filter>ViewCarLotControllers</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PersonController.h">
@@ -125,6 +146,18 @@
     </ClInclude>
     <ClInclude Include="BuyVehicleController.h">
       <Filter>Edit Database Controller headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Review_Page.h">
+      <Filter>ReviewPage</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewCarLotController.h">
+      <Filter>Main Controller Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewAllCarsScreen.h">
+      <Filter>View Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewAllVehicleController.h">
+      <Filter>ViewCarLotControllersHeaders</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

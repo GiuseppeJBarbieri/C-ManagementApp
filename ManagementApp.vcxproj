@@ -32,8 +32,12 @@
     <ClCompile Include="HomeScreen.cpp" />
     <ClCompile Include="PersonController.cpp" />
     <ClCompile Include="PersonObj.cpp" />
+    <ClCompile Include="Review_Page.cpp" />
     <ClCompile Include="Sales_invoice_Main.cpp" />
     <ClCompile Include="Utilities.cpp" />
+    <ClCompile Include="ViewAllCarsScreen.cpp" />
+    <ClCompile Include="ViewAllVehicleController.cpp" />
+    <ClCompile Include="ViewCarLotController.cpp" />
     <ClCompile Include="View_Cars_Main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -49,8 +53,12 @@
     <ClInclude Include="HomeScreen.h" />
     <ClInclude Include="PersonController.h" />
     <ClInclude Include="PersonObjH.h" />
+    <ClInclude Include="Review_Page.h" />
     <ClInclude Include="Sales_Invoice_Main.h" />
     <ClInclude Include="Utilities.h" />
+    <ClInclude Include="ViewAllCarsScreen.h" />
+    <ClInclude Include="ViewAllVehicleController.h" />
+    <ClInclude Include="ViewCarLotController.h" />
     <ClInclude Include="View_Cars_Main.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

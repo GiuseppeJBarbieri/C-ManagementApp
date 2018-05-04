@@ -18,13 +18,21 @@ using namespace std;
 
 class CarModel
 {
-private:
-	int id;
-	string make, model, year;
+//private:
+	
 
 public :
+	int id;
+	string make;
+	string model;
+	string year;
+
 	CarModel();
 	CarModel(int id, string make, string model, string year);
+	int getId();
+	string getMake();
+	string getModel();
+	string getYear();
 	void showCar();
 };
 #endif // !CarModel_h
