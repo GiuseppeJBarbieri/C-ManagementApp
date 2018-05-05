@@ -2,6 +2,7 @@
 #include "ViewAllVehicleController.h"
 #include "SearchCarLotController.h"
 #include "CarModel.h"
+#include "CarInfoModel.h"
 
 #include <vector>
 #include <iostream>
@@ -11,6 +12,11 @@ using namespace std;
 vector<CarModel> ViewCarLotController::getAllVehicles()
 {
 	return ViewAllVehicleController::getCarDB();
+}
+
+vector<CarInfoModel> ViewCarLotController::getAllVehiclesInfo()
+{
+	return ViewAllVehicleController::getCarInfoDB();
 }
 
 vector<CarModel> ViewCarLotController::searchVehicle(int choice, string searchStr)

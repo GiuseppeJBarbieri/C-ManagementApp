@@ -21,15 +21,19 @@ void View_Cars_Main::viewCarsMenu()
 	gotoxy(50, i++);
 	cout << "|                                               |";
 	gotoxy(50, i++);
-	cout << "|            [1]. View All Vehicles             |";
+	cout << "|        [1]. View All Vehicles(simple)         |";
 	gotoxy(50, i++);
 	cout << "|                                               |";
 	gotoxy(50, i++);
-	cout << "|            [2]. Search For Vehicle            |";
+	cout << "|        [2]. View All Vehicles(extended)       |";
 	gotoxy(50, i++);
 	cout << "|                                               |";
 	gotoxy(50, i++);
-	cout << "|            [3]. Exit                          |";
+	cout << "|        [3]. Search For Vehicle                |";
+	gotoxy(50, i++);
+	cout << "|                                               |";
+	gotoxy(50, i++);
+	cout << "|        [4]. Exit                              |";
 	gotoxy(50, i++);
 	cout << "|                                               |";
 	gotoxy(50, i++);
@@ -49,9 +53,12 @@ void View_Cars_Main::viewCarsMenu()
 		ViewAllCarsScreen::showAllCars();
 		break;
 	case 2:
-		SearchForVehiclesScreen::showSearchMenu();
+		ViewAllCarsScreen::showAllCarsAdv();
 		break;
 	case 3:
+		SearchForVehiclesScreen::showSearchMenu();
+		break;
+	case 4:
 		break;
 	}
 }

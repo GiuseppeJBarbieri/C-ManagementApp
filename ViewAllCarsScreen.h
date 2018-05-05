@@ -6,6 +6,7 @@ class ViewAllCarsScreen
 {
 public:
 	static void showAllCars();
+	static void showAllCarsAdv();
 };
 
 #endif // !ViewAllCarsScreen_h
