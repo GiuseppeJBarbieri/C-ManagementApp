@@ -1,6 +1,7 @@
 #include "Edit_Cars_Main.h"
 #include "Utilities.h"
 #include "BuyVehicleScreen.h"
+#include "SellVehicleScreen.h"
 
 #include <string>
 #include <iostream>
@@ -49,7 +50,7 @@ void Edit_Cars_Main::editCarsMenu()
 	switch (selection)
 	{
 	case 1:
-		cout << "SOMe SHit";
+		SellVehicleScreen::sellVehicleScreen();
 		break;
 	case 2:
 		cout << "Selted";

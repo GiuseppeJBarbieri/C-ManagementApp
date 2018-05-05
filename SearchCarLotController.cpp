@@ -75,8 +75,31 @@ void SearchCarLotController::getVehicleList(vector<CarModel> &matchedList)
 	ifstream fin = openFile();
 	vector<CarModel> cars;
 	CarModel temp;
-	while ( fin >> temp.id >> temp.make >> temp.model >> temp.year) {
-		cars.push_back(temp);
+	string str;
+	int i = 0;
+	while (getline(fin, str, ':'))
+	{
+		if (i == 0)
+		{
+			temp.id = str;
+			i++;
+		}
+		else if (i == 1)
+		{
+			temp.make = str;
+			i++;
+		}
+		else if (i == 2)
+		{
+			temp.model = str;
+			i++;
+		}
+		else if (i == 3)
+		{
+			temp.year = str;
+			cars.push_back(temp);
+			i = 0;
+		}
 	}
 	matchedList = cars;
 

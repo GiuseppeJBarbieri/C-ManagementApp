@@ -10,6 +10,7 @@
 #include "EditDatabaseController.h"
 #include "CarModel.h"
 #include "BuyVehicleController.h"
+#include "SellVehicleController.h"
 
 #include <string>
 #include <iostream>
@@ -78,16 +79,19 @@ void EditDatabaseController::createId()
 //If I'm buying im going to need to create an id..
 //Take in make, model, year, type, driveline, enginetype, enginesize, pricePurchased, dateRecieved
 
-void EditDatabaseController::buyVehicle(string make, string model, string year, string type, string driveline, string enginetype, string enginesize, string pricePurchased, string dateRecieved)
+void EditDatabaseController::buyVehicle(string make, string model, string year, string type, string driveline, string enginetype, string enginesize, string pricePurchased, string setAskingPrice, string dateRecieved)
 {
 	createId();
 	string idS = to_string(id);
-	CarModel car(idS, make, model, year);
+	//CarModel car(idS, make, model, year);
 	BuyVehicleController::addCarModel(id, make, model, year);
+	BuyVehicleController::addCarInfoModel(id, type, driveline, enginetype, enginesize);
+	BuyVehicleController::addCarPriceInfoModel(id, pricePurchased, setAskingPrice, dateRecieved);
 }
 
-void EditDatabaseController::sellVehicle()
+void EditDatabaseController::sellVehicle(string id, string date, string priceSold)
 {
+	SellVehicleController::sellVehicle(id, date, priceSold);
 }
 
 void EditDatabaseController::tradeVehicle()

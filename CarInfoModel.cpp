@@ -14,7 +14,7 @@ using namespace std;
 
 CarInfoModel::CarInfoModel() { }
 
-CarInfoModel::CarInfoModel(int id, string type, string driveLine, string engineType, string engineSize) : id(id), type(type), driveLine(driveLine), engineType(engineType), engineSize(engineSize) { }
+CarInfoModel::CarInfoModel(string id, string type, string driveLine, string engineType, string engineSize) : id(id), type(type), driveLine(driveLine), engineType(engineType), engineSize(engineSize) { }
 
 void CarInfoModel::showCarInfo()
 {

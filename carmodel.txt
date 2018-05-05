@@ -1,1 +1,1 @@
-1:Pontiac:GTO:2006:2:Chevy:Caprice:1994:3:ford:fusion:2013
+1:pontiac:gto:2006:2:chevy:caprice:1994:

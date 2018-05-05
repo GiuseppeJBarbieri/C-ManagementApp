@@ -23,9 +23,9 @@ private:
 public:
 	static void createId();
 	static void buyVehicle(string make, string model, string year, string type, string driveline,
-		string enginetype, string enginesize, string pricePurchased, string dateRecieved);
-	void sellVehicle();
-	void tradeVehicle();
+		string enginetype, string enginesize, string pricePurchased, string setAskingPrice, string dateRecieved);
+	static void sellVehicle(string id, string date, string priceSold);
+	static void tradeVehicle();
 };
 
 #endif // !EditDatabaseController.h

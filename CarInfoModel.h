@@ -17,12 +17,12 @@ using namespace std;
 class CarInfoModel
 {
 private :
-	int id;
+	string id;
 	string type, driveLine, engineType, engineSize;
 
 public :
 	CarInfoModel();
-	CarInfoModel(int id, string type, string driveLine, string engineType, string engineSize);
+	CarInfoModel(string id, string type, string driveLine, string engineType, string engineSize);
 	void showCarInfo();
 };
 

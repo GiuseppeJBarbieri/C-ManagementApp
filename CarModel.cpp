@@ -19,14 +19,7 @@ CarModel::CarModel(string id, string make, string model, string year) : id(id), 
 void CarModel::showCar()
 {
 	cout << "ID: " << id << " Make: " << make << " Model: " << model << " Year: " << year << endl;
-	/*
-	cout << id << endl;
-	printf("%s\n", make);
-	printf("%s\n", model);
-	printf("%s\n", year);
-	*/
-
-}
+	}
 
 //then create a function that saves each object to a text file but depending on what it is using a key.
 //then a function to load a specific database

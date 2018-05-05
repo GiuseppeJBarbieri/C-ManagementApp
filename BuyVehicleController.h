@@ -14,7 +14,7 @@ private:
 public:
 	static void addCarModel(int id, string make, string model, string year);
 	static void addCarInfoModel(int id, string type, string driveLine, string engineType, string engineSize);
-	static void addCarPriceInfoModel();
+	static void addCarPriceInfoModel(int id, string pricePurchased, string setAskingPrice, string dateRecieved);
 
 	static void showCarModel();
 };

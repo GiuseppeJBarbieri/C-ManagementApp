@@ -19,6 +19,7 @@ void BuyVehicleScreen::buyVehicleScreen()
 	string enginesize;
 	string pricepurchased;
 	string daterecieved;
+	string setAskingPrice;
 
 	int i = 9;
 	system("CLS");
@@ -76,7 +77,13 @@ void BuyVehicleScreen::buyVehicleScreen()
 	cout << "|  Date Recieved:                               |";
 	gotoxy(68, i);
 	cin >> daterecieved;	
-	EditDatabaseController::buyVehicle(make, model, year, type, driveline, enginetype, enginesize, pricepurchased, daterecieved);
+	gotoxy(50, i);
+	cout << "|  Asking Price:                                |";
+	gotoxy(67, i);
+	cin >> daterecieved;
+
+	EditDatabaseController::buyVehicle(make, model, year, type, driveline, enginetype, enginesize, pricepurchased, setAskingPrice, daterecieved);
+
 	gotoxy(50, i);
 	cout << "|  Vehicle Added!                               |";
 	gotoxy(50, 17);

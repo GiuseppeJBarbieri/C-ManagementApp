@@ -19,13 +19,14 @@ using namespace std;
 class CarPriceInfoModel
 {
 private:
-	int id, customerId;
-	double askingPrice, pricePurchased, priceSold;
-	string dateRecieved, dateSold;
+	
 
 public :
+	string id;
+	string askingPrice, pricePurchased, priceSold;
+	string dateRecieved, dateSold;
 	CarPriceInfoModel();
-	CarPriceInfoModel(int id, int customerId, double askingPrice, double pricePurchased, double priceSold, string dateRecieved, string datesold);
+	CarPriceInfoModel(string id, string dateRecieved, string pricePurchased, string askingPrice, string dateSold, string priceSold);
 	void showCarPriceInfo();
 };
 
