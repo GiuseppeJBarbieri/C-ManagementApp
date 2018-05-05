@@ -26,6 +26,7 @@ public:
 		string enginetype, string enginesize, string pricePurchased, string setAskingPrice, string dateRecieved);
 	static void sellVehicle(string id, string date, string priceSold);
 	static void tradeVehicle();
+	static int checkID(string id);
 };
 
 #endif // !EditDatabaseController.h

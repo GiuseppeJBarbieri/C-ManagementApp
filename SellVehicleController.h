@@ -16,6 +16,7 @@ public:
 	static vector<CarPriceInfoModel> getCarPriceDB();
 	static void sellVehicle(string id, string date, string priceSold);
 	static void rewriteFile(vector<CarPriceInfoModel> vehicleList);
+	static int findID(string id);
 };
 
 

@@ -67,9 +67,7 @@ void SellVehicleController::sellVehicle(string id, string date, string priceSold
 		if (id.compare(id2) == 0)
 		{
 			vehicleList[i].dateSold = date;
-			//cout << "VEHICKLES: " << vehicleList[i].dateSold;
 			vehicleList[i].priceSold = priceSold;
-
 			break;
 		}
 		i++;
@@ -90,4 +88,20 @@ void SellVehicleController::rewriteFile(vector<CarPriceInfoModel> vehicleList)
 		fout << car.id << ":" << car.dateRecieved << ":" << car.pricePurchased << ":" << car.askingPrice << ":" << car.dateSold << ":" << car.priceSold << ":";
 	}
 	
+}
+
+int SellVehicleController::findID(string id)
+{
+	vector<CarPriceInfoModel> vehicleList = getCarPriceDB();
+	int i = 0;
+	for (const auto& car : vehicleList) {
+		string id2 = car.id;
+		if (id.compare(id2) == 0)
+		{
+			return 1;
+			break;
+		}
+		i++;
+	}
+	return 0;
 }

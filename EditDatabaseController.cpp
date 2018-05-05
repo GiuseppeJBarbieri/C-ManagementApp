@@ -97,3 +97,8 @@ void EditDatabaseController::sellVehicle(string id, string date, string priceSol
 void EditDatabaseController::tradeVehicle()
 {
 }
+
+int EditDatabaseController::checkID(string id)
+{
+	return SellVehicleController::findID(id);
+}
