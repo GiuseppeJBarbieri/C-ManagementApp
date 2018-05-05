@@ -22,14 +22,14 @@ class CarModel
 	
 
 public :
-	int id;
+	string id;
 	string make;
 	string model;
 	string year;
 
 	CarModel();
-	CarModel(int id, string make, string model, string year);
-	int getId();
+	CarModel(string id, string make, string model, string year);
+	string getId();
 	string getMake();
 	string getModel();
 	string getYear();

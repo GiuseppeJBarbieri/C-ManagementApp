@@ -14,7 +14,7 @@ using namespace std;
 
 CarModel::CarModel() { }
 
-CarModel::CarModel(int id, string make, string model, string year) : id(id), make(make), model(model), year(year) { }
+CarModel::CarModel(string id, string make, string model, string year) : id(id), make(make), model(model), year(year) { }
 
 void CarModel::showCar()
 {

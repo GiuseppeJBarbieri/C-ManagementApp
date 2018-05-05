@@ -49,7 +49,7 @@ vector<string> splitString(string line)
 	stringstream ss(line);
 	string tok;
 
-	while (getline(ss, tok, ' '))
+	while (getline(ss, tok, ':'))
 	{
 		internal.push_back(tok);
 	}
@@ -61,10 +61,17 @@ void EditDatabaseController::createId()
 	ifstream fin;
 	fin.open("CarModel.txt");
 	string line = getLastLine(fin);
-	vector<string> idString = splitString(line);
-	stringstream idS(idString[0]);
-	idS >> id;
-	id++;
+	if (line.compare("") == 0)
+	{
+		id = 1;
+	}
+	else
+	{
+		vector<string> idString = splitString(line);
+		stringstream idS(idString[0]);
+		idS >> id;
+		id++;
+	}
 }
 
 
@@ -74,7 +81,8 @@ void EditDatabaseController::createId()
 void EditDatabaseController::buyVehicle(string make, string model, string year, string type, string driveline, string enginetype, string enginesize, string pricePurchased, string dateRecieved)
 {
 	createId();
-	CarModel car(id, make, model, year);
+	string idS = to_string(id);
+	CarModel car(idS, make, model, year);
 	BuyVehicleController::addCarModel(id, make, model, year);
 }
 

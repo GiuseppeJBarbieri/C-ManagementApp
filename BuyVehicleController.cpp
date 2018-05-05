@@ -26,8 +26,7 @@ void BuyVehicleController::addCarModel(int id, string make, string model, string
 		cerr << "Error in opening file\n";
 	}
 
-	fout << id << ' ' << make << ' ' << model << ' ' << year << '\n';
-	cout << "Saved!\n";
+	fout << id << ":" << make << ":" << model << ":" << year << '\n';
 }
 
 

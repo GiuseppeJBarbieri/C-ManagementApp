@@ -24,7 +24,7 @@ void ViewAllCarsScreen::showAllCars()
 	int i = 13;
 	for (const auto& car1 : vehicleDB) {
 		gotoxy(50, i++);
-		cout <<"|   " << car1.id << "\t\t" << car1.make << "\t\t" << car1.model << "\t\t" << car1.year << "\t|" << endl;
+		cout <<"|   " << car1.id << "\t\t" << car1.make << "\t\t" << car1.model << "\t\t" << car1.year << "\t|";
 	}
 	gotoxy(50, i++);
 	cout << "|-----------------------------------------------------|\n";
