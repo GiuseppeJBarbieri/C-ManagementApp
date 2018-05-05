@@ -3,9 +3,10 @@
 
 class Edit_Cars_Main
 {
+private:
+
 public:
-	void editCarsMenu();
-	void getSelection(int selection);
+	static void editCarsMenu();
 };
 
 #endif 

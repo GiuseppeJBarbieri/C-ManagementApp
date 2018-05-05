@@ -27,6 +27,11 @@ void ViewAllCarsScreen::showAllCars()
 		cout <<"|   " << car1.id << "\t\t" << car1.make << "\t\t" << car1.model << "\t\t" << car1.year << "\t|" << endl;
 	}
 	gotoxy(50, i++);
-	cout << "|=====================================================|\n";
+	cout << "|-----------------------------------------------------|\n";
 	gotoxy(50, ++i);
+	cout << "|=====================================================|\n";
+	gotoxy(50, --i);
+	cout << "|                                                     |\n";
+	gotoxy(53, i);
+	system("pause");
 }

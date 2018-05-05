@@ -14,7 +14,6 @@ vector<CarModel> ViewAllVehicleController::getCarDB()
 	if (!fin) {
 		cerr << "Error in opening the file" << endl;
 	}
-
 	vector<CarModel> car;
 	CarModel temp;
 	while (fin >> temp.id >> temp.make >> temp.model >> temp.year) {

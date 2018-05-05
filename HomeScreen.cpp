@@ -18,11 +18,9 @@ using namespace std;
 void HomeScreen::start()
 {
 	system("CLS");	
-	//string firstName;
 
 	while (true)
 	{
-
 		displayName();
 		//CreatePersonScreen * createPerson = new CreatePersonScreen();
 		View_Cars_Main * viewCarsScreen = new View_Cars_Main();
@@ -30,6 +28,7 @@ void HomeScreen::start()
 		Sales_Invoice_Main * salesInvoiceScreen = new Sales_Invoice_Main();
 		Customer_Information_Main * customerInfoScreen = new Customer_Information_Main();
 		Review_Page * reviewPage = new Review_Page();
+
 		gotoxy(50, 10);
 		cout << "Hello and welcome to the project" << endl;
 		gotoxy(50, 11);
@@ -46,6 +45,7 @@ void HomeScreen::start()
 		cout << "6. Exit Application                               \n";
 		gotoxy(50, 17);
 		int input;
+		input = 0;
 		cin >> input;	
 
 		switch (input)
@@ -53,13 +53,11 @@ void HomeScreen::start()
 			//in this case when the user enters v it will create a reference for the CreatePersonScreen.cpp file located in the view folder.
 			//It then starts the createPerosnInstructions.
 		case 1:
-			//createPerson->createPersonInstructions();
 			viewCarsScreen->viewCarsMenu();
 			gotoxy(50, 18);
 			cout << "                                  ";
 			break;
 		case 2:
-			//createPerson->loadPersonFromFile();
 			editCarsScreen->editCarsMenu();
 			gotoxy(50, 18);
 			cout << "                                  ";

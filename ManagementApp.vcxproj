@@ -21,6 +21,7 @@
   <ItemGroup>
     <ClCompile Include="App.cpp" />
     <ClCompile Include="BuyVehicleController.cpp" />
+    <ClCompile Include="BuyVehicleScreen.cpp" />
     <ClCompile Include="CarInfoModel.cpp" />
     <ClCompile Include="CarModel.cpp" />
     <ClCompile Include="CarPriceInfoModel.cpp" />
@@ -34,6 +35,9 @@
     <ClCompile Include="PersonObj.cpp" />
     <ClCompile Include="Review_Page.cpp" />
     <ClCompile Include="Sales_invoice_Main.cpp" />
+    <ClCompile Include="SearchCarLotController.cpp" />
+    <ClCompile Include="SearchForVehiclesScreen.cpp" />
+    <ClCompile Include="SearchResultsScreen.cpp" />
     <ClCompile Include="Utilities.cpp" />
     <ClCompile Include="ViewAllCarsScreen.cpp" />
     <ClCompile Include="ViewAllVehicleController.cpp" />
@@ -42,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BuyVehicleController.h" />
+    <ClInclude Include="BuyVehicleScreen.h" />
     <ClInclude Include="CarInfoModel.h" />
     <ClInclude Include="CarModel.h" />
     <ClInclude Include="CarPriceInfoModel.h" />
@@ -55,6 +60,9 @@
     <ClInclude Include="PersonObjH.h" />
     <ClInclude Include="Review_Page.h" />
     <ClInclude Include="Sales_Invoice_Main.h" />
+    <ClInclude Include="SearchCarLotController.h" />
+    <ClInclude Include="SearchForVehiclesScreen.h" />
+    <ClInclude Include="SearchResultsScreen.h" />
     <ClInclude Include="Utilities.h" />
     <ClInclude Include="ViewAllCarsScreen.h" />
     <ClInclude Include="ViewAllVehicleController.h" />

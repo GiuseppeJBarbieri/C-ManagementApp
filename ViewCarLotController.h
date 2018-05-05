@@ -13,7 +13,7 @@ private:
 
 public:
 	static vector<CarModel> getAllVehicles();
-	static void searchVehicle();
+	static vector<CarModel> searchVehicle(int choice, string searchStr);
 };
 
 #endif // !ViewCarLotController.h

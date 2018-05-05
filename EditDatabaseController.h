@@ -23,7 +23,7 @@ private:
 public:
 	static void createId();
 	static void buyVehicle(string make, string model, string year, string type, string driveline,
-		string enginetype, string enginesize, double pricePurchased, string dateRecieved);
+		string enginetype, string enginesize, string pricePurchased, string dateRecieved);
 	void sellVehicle();
 	void tradeVehicle();
 };

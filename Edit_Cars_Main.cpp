@@ -1,6 +1,6 @@
 #include "Edit_Cars_Main.h"
 #include "Utilities.h"
-#include "EditDatabaseController.h"
+#include "BuyVehicleScreen.h"
 
 #include <string>
 #include <iostream>
@@ -9,77 +9,56 @@ using namespace std;
 
 void Edit_Cars_Main::editCarsMenu()
 {
-	int selection;
+	int i = 9;
 	system("CLS");
-	gotoxy(50, 9);
-	cout << "\tEDIT VEHICLES\n";
-	gotoxy(50, 10);
-	cout << "--------------------------";
-	gotoxy(50, 11);
-	cout << "1. Sell Vehicle\n";
-	gotoxy(50, 12);
-	cout << "2. Trade Vehicle\n";
-	gotoxy(50, 13);
-	cout << "3. Buy Vehicle\n";
-	gotoxy(50, 14);
+	gotoxy(50, i++);
+	cout << "|===============================================|";
+	gotoxy(50, i++);
+	cout << "|          What would you like to do?           |";
+	gotoxy(50, i++);
+	cout << "|-----------------------------------------------|";
+	gotoxy(50, i++);
+	cout << "|                                               |";
+	gotoxy(50, i++);
+	cout << "|            [1]. Sell a Vehicle                |";
+	gotoxy(50, i++);
+	cout << "|                                               |";
+	gotoxy(50, i++);
+	cout << "|            [2]. Trade Vehicle                 |";
+	gotoxy(50, i++);
+	cout << "|                                               |";
+	gotoxy(50, i++);
+	cout << "|            [3]. Buy Vehicle                   |";
+	gotoxy(50, i++);
+	cout << "|                                               |";
+	gotoxy(50, i++);
+	cout << "|            [4]. Exit                          |";
+	gotoxy(50, i++);
+	cout << "|                                               |";
+	gotoxy(50, i++);
+	cout << "|-----------------------------------------------|";
+	gotoxy(50, i++);
+	cout << "| Enter choice here:                            |";
+	gotoxy(50, i);
+	cout << "|===============================================|";
+	gotoxy(71, --i);
 
-	cin >> selection;
-	getSelection(selection);
-	system("pause");
-}
-
-void Edit_Cars_Main::getSelection(int selection)
-{
-	/*
-	string make = "Pontiac";
-	string model = "GTO";
-	string year = "2006";
-	string type = "Sport";
-	string driveline = "rwd";
-	string enginetype = "V8";
-	string enginesize = "6.0L";
-	int pricepurchased = 15500;
-	string daterecieved = "4/7/1995";
-	*/
-	string make;
-	string model;
-	string year;
-	string type;
-	string driveline;
-	string enginetype;
-	string enginesize;
-	int pricepurchased;
-	string daterecieved;
-
+	int selection;
+	cin >> selection;	
 
 	switch (selection)
 	{
 	case 1:
-	case 2:
-	case 3:
-		cout << "Please enter the info(make, model, year, type, drieline, enginetype enginesize, pricePurchased, dataRecieved" << endl;
-		cout << "Make: ";
-		cin >> make;
-		cout << "Model: ";
-		cin >> model;
-		cout << "Year: ";
-		cin >> year;
-		cout << "Type: ";
-		cin >> type;
-		cout << "Drive Line: ";
-		cin >> driveline;
-		cout << "Engine Type: ";
-		cin >> enginetype;
-		cout << "Engine Size: ";
-		cin >> enginesize;
-		cout << "Price Purchased: ";
-		cin >> pricepurchased;
-		cout << "Date Recieved: ";
-		cin >> daterecieved;		
-		EditDatabaseController::buyVehicle(make, model, year, type, driveline, enginetype, enginesize, pricepurchased, daterecieved);
-
+		cout << "SOMe SHit";
 		break;
-	default:
+	case 2:
+		cout << "Selted";
+		break;
+	case 3:
+		BuyVehicleScreen::buyVehicleScreen();
+		break;
+	case 4:
 		break;
 	}
+	gotoxy(52, i);
 }

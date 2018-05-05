@@ -61,9 +61,7 @@ void EditDatabaseController::createId()
 	ifstream fin;
 	fin.open("CarModel.txt");
 	string line = getLastLine(fin);
-	cout << "LAST LINE IN FILE : " + line << endl;
 	vector<string> idString = splitString(line);
-	
 	stringstream idS(idString[0]);
 	idS >> id;
 	id++;
@@ -73,7 +71,7 @@ void EditDatabaseController::createId()
 //If I'm buying im going to need to create an id..
 //Take in make, model, year, type, driveline, enginetype, enginesize, pricePurchased, dateRecieved
 
-void EditDatabaseController::buyVehicle(string make, string model, string year, string type, string driveline, string enginetype, string enginesize, double pricePurchased, string dateRecieved)
+void EditDatabaseController::buyVehicle(string make, string model, string year, string type, string driveline, string enginetype, string enginesize, string pricePurchased, string dateRecieved)
 {
 	createId();
 	CarModel car(id, make, model, year);

@@ -100,6 +100,18 @@
     <ClCompile Include="ViewAllVehicleController.cpp">
       <Filter>ViewCarLotControllers</Filter>
     </ClCompile>
+    <ClCompile Include="SearchForVehiclesScreen.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchCarLotController.cpp">
+      <Filter>ViewCarLotControllers</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchResultsScreen.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="BuyVehicleScreen.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PersonController.h">
@@ -158,6 +170,18 @@
     </ClInclude>
     <ClInclude Include="ViewAllVehicleController.h">
       <Filter>ViewCarLotControllersHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchForVehiclesScreen.h">
+      <Filter>View Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchCarLotController.h">
+      <Filter>ViewCarLotControllersHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchResultsScreen.h">
+      <Filter>View Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="BuyVehicleScreen.h">
+      <Filter>View Headers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
