@@ -11,6 +11,7 @@
 #include "CarModel.h"
 #include "BuyVehicleController.h"
 #include "SellVehicleController.h"
+#include "CustomerInformationController.h"
 
 #include <string>
 #include <iostream>
@@ -20,7 +21,8 @@
 #include <sstream>
 
 using namespace std;
-static int id = 0;
+static int vehicleId = 0;
+static int custId = 0;
 
 istream& ignoreline(ifstream& in, ifstream::pos_type& pos)
 {
@@ -57,21 +59,21 @@ vector<string> splitString(string line)
 	return internal;
 }
 
-void EditDatabaseController::createId()
+void EditDatabaseController::createVehicleId()
 {
 	ifstream fin;
 	fin.open("CarModel.txt");
 	string line = getLastLine(fin);
 	if (line.compare("") == 0)
 	{
-		id = 1;
+		vehicleId = 1;
 	}
 	else
 	{
 		vector<string> idString = splitString(line);
 		stringstream idS(idString[0]);
-		idS >> id;
-		id++;
+		idS >> vehicleId;
+		vehicleId++;
 	}
 }
 
@@ -79,14 +81,29 @@ void EditDatabaseController::createId()
 //If I'm buying im going to need to create an id..
 //Take in make, model, year, type, driveline, enginetype, enginesize, pricePurchased, dateRecieved
 
-void EditDatabaseController::buyVehicle(string make, string model, string year, string type, string driveline, string enginetype, string enginesize, string pricePurchased, string setAskingPrice, string dateRecieved)
+void EditDatabaseController::buyVehicle(string make, string model, string year, string type, string driveline, string enginetype, string enginesize, string pricePurchased, string setAskingPrice, string dateRecieved, string firstName, string lastName, int addOrDelete)
 {
-	createId();
-	string idS = to_string(id);
-	//CarModel car(idS, make, model, year);
-	BuyVehicleController::addCarModel(id, make, model, year);
-	BuyVehicleController::addCarInfoModel(id, type, driveline, enginetype, enginesize);
-	BuyVehicleController::addCarPriceInfoModel(id, pricePurchased, setAskingPrice, dateRecieved);
+	createVehicleId();
+	string idS = to_string(vehicleId);
+	
+	BuyVehicleController::addCarModel(vehicleId, make, model, year);
+	BuyVehicleController::addCarInfoModel(vehicleId, type, driveline, enginetype, enginesize);
+	BuyVehicleController::addCarPriceInfoModel(vehicleId, pricePurchased, setAskingPrice, dateRecieved);
+	
+	addCustomer(firstName, lastName, addOrDelete);
+	
+}
+void EditDatabaseController::addCustomer(string firstName, string lastName, int addOrDelete)
+{
+	if (addOrDelete == 1)
+	{
+		CustomerInformationController::editCustomer(firstName, lastName, vehicleId);
+	}
+	else
+	{
+		CustomerInformationController::addCustomer(firstName, lastName, vehicleId);
+	}
+	
 }
 
 void EditDatabaseController::sellVehicle(string id, string date, string priceSold)
@@ -101,4 +118,9 @@ void EditDatabaseController::tradeVehicle()
 int EditDatabaseController::checkID(string id)
 {
 	return SellVehicleController::findID(id);
+}
+
+int EditDatabaseController::customerExistence(string firstName, string lastName)
+{
+	return CustomerInformationController::checkCustomerExistence(firstName, lastName);
 }

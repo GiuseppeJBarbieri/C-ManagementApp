@@ -8,8 +8,6 @@
 */
 
 #include "BuyVehicleController.h"
-#include "CarModel.h"
-#include "CarInfoModel.h"
 
 #include <fstream>
 #include <iostream>
@@ -23,7 +21,7 @@ void BuyVehicleController::addCarModel(int id, string make, string model, string
 	fout.open("CarModel.txt", ios::app);
 	if (!fout)
 	{
-		cerr << "Error in opening file\n";
+		cerr << "Error in opening CarModel\n";
 	}
 
 	fout << id << ":" << make << ":" << model << ":" << year << ":";
@@ -35,7 +33,7 @@ void BuyVehicleController::addCarInfoModel(int id, string type, string driveLine
 	fout.open("CarInfoModel.txt", ios::app);
 	if (!fout)
 	{
-		cerr << "Error in opening file\n";
+		cerr << "Error in opening CarInfoModel\n";
 	}
 	fout << id << ":" << type << ":" << driveLine << ":" << engineType << ":" << engineSize << ":";
 }
@@ -45,17 +43,19 @@ void BuyVehicleController::addCarPriceInfoModel(int id, string pricePurchased, s
 	fout.open("CarPriceInfo.txt", ios::app);
 	if (!fout)
 	{
-		cerr << "Error in opening file\n";
+		cerr << "Error in opening CarPriceInfoModel\n";
 	}
 	fout << id << ":" << dateRecieved << ":" << pricePurchased << ":" << setAskingPrice << ":" << "0" << ":" << "0" << ":";
 }
-//This function is used to show the information from the binary file but it gives me an access violation error
-void BuyVehicleController::showCarModel()
+void BuyVehicleController::addCustomerInfoModel(int id, int carIdSold, string firstName, string lastName)
 {
-
-	
-	
-	
-
+	ofstream fout;
+	fout.open("CustomerInfoModel.txt", ios::app);
+	if (!fout)
+	{
+		cerr << "Error in opening CustomerInfoModel\n";
+	}
+	fout << id << ":" << firstName << ":" << lastName << ":" << carIdSold << ":" << "0" << ":";
 }
+
 

@@ -29,26 +29,51 @@ void HomeScreen::start()
 		Customer_Information_Main * customerInfoScreen = new Customer_Information_Main();
 		Review_Page * reviewPage = new Review_Page();
 
-		gotoxy(50, 10);
-		cout << "Hello and welcome to the project" << endl;
-		gotoxy(50, 11);
-		cout << "1. View Car Lot                         \n";
-		gotoxy(50, 12);
-		cout << "2. Edit Vehicles                           \n";
-		gotoxy(50, 13);
-		cout << "3. Sales Invoices                          \n";
-		gotoxy(50, 14);
-		cout << "4. Customer/Employee Information                  \n";
-		gotoxy(50, 15);
-		cout << "5. Review Page\n";
-		gotoxy(50, 16);
-		cout << "6. Exit Application                               \n";
-		gotoxy(50, 17);
-		int input;
-		input = 0;
-		cin >> input;	
+		int i = 9;
+		gotoxy(50, i++);
+		cout << "|====================================================|";
+		gotoxy(50, i++);
+		cout << "|             What would you like to do?             |";
+		gotoxy(50, i++);
+		cout << "|----------------------------------------------------|";
+		gotoxy(50, i++);
+		cout << "|                                                    |";
+		gotoxy(50, i++);
+		cout << "|            [1]. View Car Lot                       |";
+		gotoxy(50, i++);
+		cout << "|                                                    |";
+		gotoxy(50, i++);
+		cout << "|            [2]. Edit Vehicles                      |";
+		gotoxy(50, i++);
+		cout << "|                                                    |";
+		gotoxy(50, i++);
+		cout << "|            [3]. Sales Invoices                     |";
+		gotoxy(50, i++);
+		cout << "|                                                    |";
+		gotoxy(50, i++);
+		cout << "|            [4]. Customer Information               |";
+		gotoxy(50, i++);
+		cout << "|                                                    |";
+		gotoxy(50, i++);
+		cout << "|            [5]. Review Page                        |";
+		gotoxy(50, i++);
+		cout << "|                                                    |";
+		gotoxy(50, i++);
+		cout << "|            [6]. Exit                               |";
+		gotoxy(50, i++);
+		cout << "|                                                    |";
+		gotoxy(50, i++);
+		cout << "|----------------------------------------------------|";
+		gotoxy(50, i++);
+		cout << "| Enter choice here:                                 |";
+		gotoxy(50, i);
+		cout << "|====================================================|";
+		gotoxy(71, --i);
 
-		switch (input)
+		int selection;
+		cin >> selection;
+		
+		switch (selection)
 		{
 			//in this case when the user enters v it will create a reference for the CreatePersonScreen.cpp file located in the view folder.
 			//It then starts the createPerosnInstructions.

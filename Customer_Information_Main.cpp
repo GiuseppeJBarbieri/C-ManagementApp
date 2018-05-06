@@ -7,17 +7,42 @@ using namespace std;
 
 void Customer_Information_Main::customerInfoMenu()
 {
+	int i = 9;
 	system("CLS");
-	gotoxy(50, 9);
-	cout << "\tVIEW CUSTOMERS/EMPLOYEES\n";
-	gotoxy(50, 10);
-	cout << "--------------------------";
-	gotoxy(50, 11);
-	cout << "1. Search Customers\n";
-	gotoxy(50, 12);
-	cout << "2. Search Employees\n";
-	gotoxy(50, 13);
-	system("pause");
-	gotoxy(50, 14);
-	cout << "                                   \n";
+	gotoxy(50, i++);
+	cout << "|===============================================|";
+	gotoxy(50, i++);
+	cout << "|          What would you like to do?           |";
+	gotoxy(50, i++);
+	cout << "|-----------------------------------------------|";
+	gotoxy(50, i++);
+	cout << "|                                               |";
+	gotoxy(50, i++);
+	cout << "|        [1]. View Customer Information         |";
+	gotoxy(50, i++);
+	cout << "|                                               |";
+	gotoxy(50, i++);
+	cout << "|        [2]. Exit          |";
+	gotoxy(50, i++);
+	cout << "|                                               |";	
+	gotoxy(50, i++);
+	cout << "|                                               |";
+	gotoxy(50, i++);
+	cout << "|-----------------------------------------------|";
+	gotoxy(50, i++);
+	cout << "| Enter choice here:                            |";
+	gotoxy(50, i);
+	cout << "|===============================================|";
+	gotoxy(71, --i);
+
+	int selection;
+	cin >> selection;
+
+	switch (selection)
+	{
+	case 1:
+
+		break;
+	}
+	
 }

@@ -1,1 +1,1 @@
-1:pontiac:gto:2006:2:chevy:caprice:1994:
+1:Pontiac:GTO:2006:

@@ -21,12 +21,15 @@ class EditDatabaseController
 private:
 
 public:
-	static void createId();
+	static void createVehicleId();
+	static void createCustomerId();
 	static void buyVehicle(string make, string model, string year, string type, string driveline,
-		string enginetype, string enginesize, string pricePurchased, string setAskingPrice, string dateRecieved);
+		string enginetype, string enginesize, string pricePurchased, string setAskingPrice, string dateRecieved, string firstName, string lastName, int addOrDelete);
+	static void addCustomer(string firstName, string lastName, int addOrDelete);
 	static void sellVehicle(string id, string date, string priceSold);
 	static void tradeVehicle();
 	static int checkID(string id);
+	static int customerExistence(string firstName, string lastName);
 };
 
 #endif // !EditDatabaseController.h

@@ -17,12 +17,14 @@ using namespace std;
 class CustomerInfoModel
 {
 private:
-	int customerId, carIdSold, carIdPurchased;
-	string firstname, lastname, address;
+	
 
 public :
+	string customerId, carIdSold, carIdPurchased;
+	string firstname, lastname;
+
 	CustomerInfoModel();
-	CustomerInfoModel(int customerId, string firstname, string lastname, string address, int carIdSold, int carIdPurchased);
+	CustomerInfoModel(string customerId, string firstname, string lastname, string carIdSold, string carIdPurchased);
 	void showCustomer();
 };
 

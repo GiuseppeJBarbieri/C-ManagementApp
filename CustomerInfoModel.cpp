@@ -15,11 +15,11 @@ using namespace std;
 
 CustomerInfoModel::CustomerInfoModel() { }
 
-CustomerInfoModel::CustomerInfoModel(int customerId, string firstname, string lastname, string address, int carIdSold, int carIdPurchased)
-	: customerId(customerId), firstname(firstname), lastname(lastname), address(address), carIdSold(carIdSold), carIdPurchased(carIdPurchased) { }
+CustomerInfoModel::CustomerInfoModel(string customerId, string firstname, string lastname, string carIdSold, string carIdPurchased)
+	: customerId(customerId), firstname(firstname), lastname(lastname), carIdSold(carIdSold), carIdPurchased(carIdPurchased) { }
 
 void CustomerInfoModel::showCustomer()
 {
-	cout << "Customer Id: " << customerId << " First Name: " << firstname << " Last Name: " << lastname << " Address: " << address 
-		<< " Car Id Sold: " << carIdSold << " Car Id Purchased: " << carIdPurchased << endl;
+	cout << "Customer Id: " << customerId << " First Name: " << firstname << " Last Name: " << lastname << " Car Id Sold: " << carIdSold 
+		<< " Car Id Purchased: " << carIdPurchased << endl;
 }
