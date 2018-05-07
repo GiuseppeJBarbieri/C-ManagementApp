@@ -1,6 +1,7 @@
 #include "SearchResultsScreen.h"
 #include "SearchForVehiclesScreen.h"
 #include "Utilities.h"
+#include "View_Cars_Main.h"
 #include <iostream>
 
 using namespace std;
@@ -37,5 +38,9 @@ void SearchResultsScreen::showResultScreen(vector<CarModel> resultsList)
 	if (choice.compare("y") == 0 || choice.compare("Y") == 0)
 	{
 		SearchForVehiclesScreen::showSearchMenu();
+	}
+	else
+	{
+		View_Cars_Main::viewCarsMenu();
 	}
 }

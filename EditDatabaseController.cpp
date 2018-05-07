@@ -81,7 +81,7 @@ void EditDatabaseController::createVehicleId()
 //If I'm buying im going to need to create an id..
 //Take in make, model, year, type, driveline, enginetype, enginesize, pricePurchased, dateRecieved
 
-void EditDatabaseController::buyVehicle(string make, string model, string year, string type, string driveline, string enginetype, string enginesize, string pricePurchased, string setAskingPrice, string dateRecieved, string firstName, string lastName, int addOrDelete)
+void EditDatabaseController::buyVehicle(string make, string model, string year, string type, string driveline, string enginetype, string enginesize, string pricePurchased, string setAskingPrice, string dateRecieved, string firstName, string lastName, int selection, int sellOrBuy)
 {
 	createVehicleId();
 	string idS = to_string(vehicleId);
@@ -90,14 +90,14 @@ void EditDatabaseController::buyVehicle(string make, string model, string year, 
 	BuyVehicleController::addCarInfoModel(vehicleId, type, driveline, enginetype, enginesize);
 	BuyVehicleController::addCarPriceInfoModel(vehicleId, pricePurchased, setAskingPrice, dateRecieved);
 	
-	addCustomer(firstName, lastName, addOrDelete);
+	addCustomer(firstName, lastName, selection, sellOrBuy);
 	
 }
-void EditDatabaseController::addCustomer(string firstName, string lastName, int addOrDelete)
+void EditDatabaseController::addCustomer(string firstName, string lastName, int selection, int sellOrBuy)
 {
-	if (addOrDelete == 1)
+	if (selection == 1)
 	{
-		CustomerInformationController::editCustomer(firstName, lastName, vehicleId);
+		CustomerInformationController::editCustomer(firstName, lastName, vehicleId, sellOrBuy);
 	}
 	else
 	{

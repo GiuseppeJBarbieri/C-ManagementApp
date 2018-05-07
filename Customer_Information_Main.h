@@ -4,7 +4,7 @@
 class Customer_Information_Main
 {
 public:
-	void customerInfoMenu();
+	static void customerInfoMenu();
 };
 
 #endif 

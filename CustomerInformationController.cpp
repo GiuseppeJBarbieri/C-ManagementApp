@@ -1,4 +1,5 @@
 #include "CustomerInformationController.h"
+#include "EditCustomerController.h"
 #include "CustomerInfoModel.h"
 #include "BuyVehicleController.h"
 
@@ -74,9 +75,16 @@ void CustomerInformationController::addCustomer(string firstName, string lastNam
 	BuyVehicleController::addCustomerInfoModel(customerId, vehicleIdSold, firstName, lastName);
 	
 }
-void CustomerInformationController::editCustomer(string firstName, string lastName, int vehicleIdSold)
+void CustomerInformationController::editCustomer(string firstName, string lastName, int vehicleIdSold, int soldOrBought)
 {
-
+	if (soldOrBought == 1)
+	{
+		EditCustomerController::updateCustomerBought(to_string(vehicleIdSold), firstName, lastName);
+	}
+	else
+	{
+		EditCustomerController::updateCustomerSold(to_string(vehicleIdSold), firstName, lastName);
+	}
 }
 
 int CustomerInformationController::checkCustomerExistence(string firstName, string lastName)

@@ -1,7 +1,7 @@
 #include "ViewAllCarsScreen.h"
 #include "ViewCarLotController.h"
 #include "Utilities.h"
-
+#include "View_Cars_Main.h"
 #include <string>
 #include <iostream>
 
@@ -34,6 +34,7 @@ void ViewAllCarsScreen::showAllCars()
 	cout << "|                                                     |\n";
 	gotoxy(53, i);
 	system("pause");
+	View_Cars_Main::viewCarsMenu();
 }
 
 void ViewAllCarsScreen::showAllCarsAdv()
@@ -69,4 +70,5 @@ void ViewAllCarsScreen::showAllCarsAdv()
 	cout << "|                                                                                       |\n";
 	gotoxy(53, i);
 	system("pause");
+	View_Cars_Main::viewCarsMenu();
 }

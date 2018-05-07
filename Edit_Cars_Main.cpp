@@ -25,15 +25,11 @@ void Edit_Cars_Main::editCarsMenu()
 	gotoxy(50, i++);
 	cout << "|                                               |";
 	gotoxy(50, i++);
-	cout << "|            [2]. Trade Vehicle                 |";
+	cout << "|            [2]. Buy Vehicle                   |";
 	gotoxy(50, i++);
 	cout << "|                                               |";
 	gotoxy(50, i++);
-	cout << "|            [3]. Buy Vehicle                   |";
-	gotoxy(50, i++);
-	cout << "|                                               |";
-	gotoxy(50, i++);
-	cout << "|            [4]. Exit                          |";
+	cout << "|            [3]. Exit                          |";
 	gotoxy(50, i++);
 	cout << "|                                               |";
 	gotoxy(50, i++);
@@ -53,12 +49,9 @@ void Edit_Cars_Main::editCarsMenu()
 		SellVehicleScreen::sellVehicleScreen();
 		break;
 	case 2:
-		cout << "Selted";
-		break;
-	case 3:
 		BuyVehicleScreen::buyVehicleScreen();
 		break;
-	case 4:
+	case 3:
 		break;
 	}
 	gotoxy(52, i);

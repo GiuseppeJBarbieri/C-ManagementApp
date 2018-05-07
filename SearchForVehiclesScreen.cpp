@@ -59,14 +59,14 @@ void SearchForVehiclesScreen::showSearchMenu()
 	case 2:
 		gotoxy(50, i);
 		cout << "| Enter the model:                          ";
-		gotoxy(72, i);
+		gotoxy(69, i);
 		cin >> model;
 		SearchResultsScreen::showResultScreen(ViewCarLotController::searchVehicle(2, model));
 		break;
 	case 3:		
 		gotoxy(50, i);
 		cout << "| Enter the year:                           ";
-		gotoxy(72, i);
+		gotoxy(68, i);
 		cin >> year;
 		SearchResultsScreen::showResultScreen(ViewCarLotController::searchVehicle(3, year));
 		break;
@@ -74,4 +74,5 @@ void SearchForVehiclesScreen::showSearchMenu()
 		break;
 	}	
 	gotoxy(52, i);
+
 }

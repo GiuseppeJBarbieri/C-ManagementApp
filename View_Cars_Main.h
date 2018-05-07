@@ -4,7 +4,7 @@
 class View_Cars_Main
 {
 public:
-	void viewCarsMenu();
+	static void viewCarsMenu();
 };
 
 #endif 

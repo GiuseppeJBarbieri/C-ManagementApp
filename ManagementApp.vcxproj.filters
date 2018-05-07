@@ -38,6 +38,12 @@
     <Filter Include="ViewCarLotControllersHeaders">
       <UniqueIdentifier>{0f2bf197-dbcd-4fbd-b2bf-76cf4baec8c0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="SalesInvoiceControllers">
+      <UniqueIdentifier>{bcc81321-f1aa-40ca-ba34-485eded08d85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SalesInvoiceControllerHeaders">
+      <UniqueIdentifier>{0a65d6ad-98bd-4de0-a1d6-9ff9106c4b27}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="App.cpp">
@@ -112,6 +118,39 @@
     <ClCompile Include="BuyVehicleScreen.cpp">
       <Filter>View</Filter>
     </ClCompile>
+    <ClCompile Include="SellVehicleScreen.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="SellVehicleController.cpp">
+      <Filter>Edit Database Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="SalesInvoiceController.cpp">
+      <Filter>Main Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewVehiclesSoldScreen.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomerInformationController.cpp">
+      <Filter>Edit Database Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="ShowCustomerInformationScreen.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewCustomerInformationController.cpp">
+      <Filter>Main Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchCustomerInfoScreen.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomerSearchController.cpp">
+      <Filter>ViewCarLotControllers</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomerSearchResultsScreen.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="EditCustomerController.cpp">
+      <Filter>Edit Database Controllers</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PersonController.h">
@@ -182,6 +221,39 @@
     </ClInclude>
     <ClInclude Include="BuyVehicleScreen.h">
       <Filter>View Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SellVehicleScreen.h">
+      <Filter>View Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SellVehicleController.h">
+      <Filter>Edit Database Controller headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SalesInvoiceController.h">
+      <Filter>Main Controller Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewVehiclesSoldScreen.h">
+      <Filter>View Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomerInformationController.h">
+      <Filter>Edit Database Controller headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ShowCustomerInformationScreen.h">
+      <Filter>View Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewCustomerInformationController.h">
+      <Filter>Main Controller Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchCustomerInfoScreen.h">
+      <Filter>View Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomerSearchController.h">
+      <Filter>ViewCarLotControllersHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomerSearchResultsScreen.h">
+      <Filter>View Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="EditCustomerController.h">
+      <Filter>Edit Database Controller headers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

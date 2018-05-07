@@ -17,7 +17,7 @@ public:
 	static int checkCustomerExistence(string firstnName, string lastName);
 	static ifstream openFile();
 	static vector<CustomerInfoModel> getCustomerList();
-	static void editCustomer(string firstName, string lastName, int vehicleIdSold);
+	static void editCustomer(string firstName, string lastName, int vehicleIdSold, int soldOrBought);
 
 };
 

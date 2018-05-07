@@ -84,12 +84,12 @@ void BuyVehicleScreen::buyVehicleScreen()
 	gotoxy(67, i);
 	cin >> daterecieved;
 	gotoxy(50, i);
-	cout << "|  First Name of customer purchased from:       |";
-	gotoxy(67, i);
+	cout << "|  First Name of customer:                      |";
+	gotoxy(77, i);
 	cin >> firstName;
 	gotoxy(50, i);
-	cout << "|  Last Name of customer purchased from:       |";
-	gotoxy(67, i);
+	cout << "|  Last Name of customer:                       |";
+	gotoxy(77, i);
 	cin >> lastName;
 
 	if (EditDatabaseController::customerExistence(firstName, lastName) == 1)
@@ -123,16 +123,22 @@ void BuyVehicleScreen::buyVehicleScreen()
 		gotoxy(79, i);
 		int selection;
 		cin >> selection;
-		EditDatabaseController::buyVehicle(make, model, year, type, driveline, enginetype, enginesize, pricepurchased, setAskingPrice, daterecieved, firstName, lastName, selection);
+		EditDatabaseController::buyVehicle(make, model, year, type, driveline, enginetype, enginesize, pricepurchased, setAskingPrice, daterecieved, firstName, lastName, selection, 1);
 
-		gotoxy(50, i);
-		cout << "|  Vehicle Added!                               |";
-		gotoxy(50, 17);
-		cout << "|  Would you like to search again?(Y/N):        |\n";
+		gotoxy(50, 14);
+		cout << "|                 Vehicle Added!                |";
+		gotoxy(50, 15);
+		cout << "|                                               |";
+		gotoxy(50, 18);
+		cout << "|  Would you like to add another?(Y/N):         |\n";
 		string choice;
-		gotoxy(91, 17);
+		gotoxy(90, 18);
 		cin >> choice;
 		if (choice.compare("y") == 0 || choice.compare("Y") == 0)
+		{
+			BuyVehicleScreen::buyVehicleScreen();
+		}
+		else
 		{
 			Edit_Cars_Main::editCarsMenu();
 		}
@@ -140,19 +146,19 @@ void BuyVehicleScreen::buyVehicleScreen()
 	}
 	else
 	{
-		EditDatabaseController::buyVehicle(make, model, year, type, driveline, enginetype, enginesize, pricepurchased, setAskingPrice, daterecieved, firstName, lastName, 2);
+		EditDatabaseController::buyVehicle(make, model, year, type, driveline, enginetype, enginesize, pricepurchased, setAskingPrice, daterecieved, firstName, lastName, 2, 1);
 
 		gotoxy(50, i);
 		cout << "|  Vehicle Added!                               |";
 		gotoxy(50, 17);
 		cout << "|  Would you like to search again?(Y/N):        |\n";
 		string choice;
-		gotoxy(91, 17);
+		gotoxy(90, 17);
 		cin >> choice;
 		if (choice.compare("y") == 0 || choice.compare("Y") == 0)
 		{
-			Edit_Cars_Main::editCarsMenu();
+			BuyVehicleScreen::buyVehicleScreen();
 		}
 	}
-	
+	Edit_Cars_Main::editCarsMenu();
 }

@@ -22,10 +22,9 @@ private:
 
 public:
 	static void createVehicleId();
-	static void createCustomerId();
 	static void buyVehicle(string make, string model, string year, string type, string driveline,
-		string enginetype, string enginesize, string pricePurchased, string setAskingPrice, string dateRecieved, string firstName, string lastName, int addOrDelete);
-	static void addCustomer(string firstName, string lastName, int addOrDelete);
+		string enginetype, string enginesize, string pricePurchased, string setAskingPrice, string dateRecieved, string firstName, string lastName, int selection, int sellOrBuy);
+	static void addCustomer(string firstName, string lastName, int selection, int sellOrBuy);
 	static void sellVehicle(string id, string date, string priceSold);
 	static void tradeVehicle();
 	static int checkID(string id);
