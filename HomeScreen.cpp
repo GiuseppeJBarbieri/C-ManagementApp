@@ -73,7 +73,7 @@ void HomeScreen::start()
 			cout << "                                  ";
 			break;
 		case 5:
-			//reviewPage->showReviewPage();
+			reviewPage->showReviewPage();
 			gotoxy(50, 15);
 			cout << "                                  ";
 			break;
