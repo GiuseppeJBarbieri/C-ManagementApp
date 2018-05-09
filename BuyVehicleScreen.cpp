@@ -82,7 +82,7 @@ void BuyVehicleScreen::buyVehicleScreen()
 	gotoxy(50, i);
 	cout << "|  Asking Price:                                |";
 	gotoxy(67, i);
-	cin >> daterecieved;
+	cin >> setAskingPrice;
 	gotoxy(50, i);
 	cout << "|  First Name of customer:                      |";
 	gotoxy(77, i);
@@ -120,7 +120,7 @@ void BuyVehicleScreen::buyVehicleScreen()
 		cout << "|===============================================|";
 		gotoxy(50, --i);
 		cout << "|  Please select an option:                     |";
-		gotoxy(79, i);
+		gotoxy(78, i);
 		int selection;
 		cin >> selection;
 		EditDatabaseController::buyVehicle(make, model, year, type, driveline, enginetype, enginesize, pricepurchased, setAskingPrice, daterecieved, firstName, lastName, selection, 1);
@@ -132,7 +132,7 @@ void BuyVehicleScreen::buyVehicleScreen()
 		gotoxy(50, 18);
 		cout << "|  Would you like to add another?(Y/N):         |\n";
 		string choice;
-		gotoxy(90, 18);
+		gotoxy(91, 18);
 		cin >> choice;
 		if (choice.compare("y") == 0 || choice.compare("Y") == 0)
 		{
@@ -153,7 +153,7 @@ void BuyVehicleScreen::buyVehicleScreen()
 		gotoxy(50, 17);
 		cout << "|  Would you like to search again?(Y/N):        |\n";
 		string choice;
-		gotoxy(90, 17);
+		gotoxy(91, 17);
 		cin >> choice;
 		if (choice.compare("y") == 0 || choice.compare("Y") == 0)
 		{

@@ -13,11 +13,9 @@ class SalesInvoiceController
 private:
 
 public:
-	static void viewVehiclesSoled();
-	static void viewVehiclesBought();
-	static void viewTotalSales();
-	static void viewTotalExpenses();
-	static void viewGrossProfit();
+	static double viewTotalSales();
+	static double viewTotalExpenses();
+	static double viewGrossProfit();
 };
 
 

@@ -1,28 +1,44 @@
-c:\users\giuseppe\desktop\project for c++\c-managementapp\x64\debug\vc141.pdb
-c:\users\giuseppe\desktop\project for c++\c-managementapp\x64\debug\vc141.idb
-c:\users\giuseppe\desktop\project for c++\c-managementapp\x64\debug\app.obj
-c:\users\giuseppe\desktop\project for c++\c-managementapp\x64\debug\buyvehiclecontroller.obj
-c:\users\giuseppe\desktop\project for c++\c-managementapp\x64\debug\carinfomodel.obj
-c:\users\giuseppe\desktop\project for c++\c-managementapp\x64\debug\carmodel.obj
-c:\users\giuseppe\desktop\project for c++\c-managementapp\x64\debug\carpriceinfomodel.obj
-c:\users\giuseppe\desktop\project for c++\c-managementapp\x64\debug\createpersonscreen.obj
-c:\users\giuseppe\desktop\project for c++\c-managementapp\x64\debug\customerinfomodel.obj
-c:\users\giuseppe\desktop\project for c++\c-managementapp\x64\debug\customer_information_main.obj
-c:\users\giuseppe\desktop\project for c++\c-managementapp\x64\debug\editdatabasecontroller.obj
-c:\users\giuseppe\desktop\project for c++\c-managementapp\x64\debug\edit_cars_main.obj
-c:\users\giuseppe\desktop\project for c++\c-managementapp\x64\debug\homescreen.obj
-c:\users\giuseppe\desktop\project for c++\c-managementapp\x64\debug\personcontroller.obj
-c:\users\giuseppe\desktop\project for c++\c-managementapp\x64\debug\personobj.obj
-c:\users\giuseppe\desktop\project for c++\c-managementapp\x64\debug\sales_invoice_main.obj
-c:\users\giuseppe\desktop\project for c++\c-managementapp\x64\debug\utilities.obj
-c:\users\giuseppe\desktop\project for c++\c-managementapp\x64\debug\view_cars_main.obj
-c:\users\giuseppe\desktop\project for c++\c-managementapp\x64\debug\review_page.obj
-c:\users\giuseppe\desktop\project for c++\c-managementapp\x64\debug\managementapp.ilk
-c:\users\giuseppe\desktop\project for c++\c-managementapp\x64\debug\managementapp.exe
-c:\users\giuseppe\desktop\project for c++\c-managementapp\x64\debug\managementapp.pdb
-c:\users\giuseppe\desktop\project for c++\c-managementapp\x64\debug\managementapp.tlog\cl.command.1.tlog
-c:\users\giuseppe\desktop\project for c++\c-managementapp\x64\debug\managementapp.tlog\cl.read.1.tlog
-c:\users\giuseppe\desktop\project for c++\c-managementapp\x64\debug\managementapp.tlog\cl.write.1.tlog
-c:\users\giuseppe\desktop\project for c++\c-managementapp\x64\debug\managementapp.tlog\link.command.1.tlog
-c:\users\giuseppe\desktop\project for c++\c-managementapp\x64\debug\managementapp.tlog\link.read.1.tlog
-c:\users\giuseppe\desktop\project for c++\c-managementapp\x64\debug\managementapp.tlog\link.write.1.tlog
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\vc141.pdb
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\vc141.idb
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\editdatabasecontroller.obj
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\edit_cars_main.obj
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\homescreen.obj
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\personcontroller.obj
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\personobj.obj
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\salesinvoicecontroller.obj
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\sales_invoice_main.obj
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\searchcarlotcontroller.obj
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\searchcustomerinfoscreen.obj
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\searchforvehiclesscreen.obj
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\searchresultsscreen.obj
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\sellvehiclecontroller.obj
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\sellvehiclescreen.obj
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\showcustomerinformationscreen.obj
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\utilities.obj
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\viewallcarsscreen.obj
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\viewallvehiclecontroller.obj
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\viewcarlotcontroller.obj
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\viewcustomerinformationcontroller.obj
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\view_cars_main.obj
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\app.obj
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\buyvehiclecontroller.obj
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\buyvehiclescreen.obj
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\carinfomodel.obj
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\carmodel.obj
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\carpriceinfomodel.obj
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\createpersonscreen.obj
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\customerinfomodel.obj
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\customerinformationcontroller.obj
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\customersearchcontroller.obj
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\customersearchresultsscreen.obj
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\customer_information_main.obj
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\editcustomercontroller.obj
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\managementapp.ilk
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\managementapp.exe
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\managementapp.pdb
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\managementapp.tlog\cl.command.1.tlog
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\managementapp.tlog\cl.read.1.tlog
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\managementapp.tlog\cl.write.1.tlog
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\managementapp.tlog\link.command.1.tlog
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\managementapp.tlog\link.read.1.tlog
+c:\users\giuseppe\desktop\cappnew\c-managementapp-master\x64\debug\managementapp.tlog\link.write.1.tlog

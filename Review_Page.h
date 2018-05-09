@@ -3,16 +3,21 @@
 * ManagementApp
 *
 *
-* Created by Andre Bernstein on 4/18/18
+* Created by Andre Bernstein
 *
 */
-#pragma once
+
 #ifndef Review_Page_h
 #define Review_Page_h
 
 class Review_Page
 {
 public:
-	void showReviewPage();
+	static void showReviewPage();
+	static void showReviews();
+	static void addReviewPage();
+	static void clearReviews();
+	static void save();
 };
-#endif // !Review_Page_h
+
+#endif //!ReviewPage_h

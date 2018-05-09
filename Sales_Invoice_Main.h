@@ -4,7 +4,7 @@
 class Sales_Invoice_Main
 {
 public:
-	void salesInvoiceMenu();
+	static void salesInvoiceMenu();
 };
 
 #endif 

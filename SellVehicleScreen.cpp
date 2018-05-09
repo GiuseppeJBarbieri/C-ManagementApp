@@ -226,6 +226,7 @@ void SellVehicleScreen::sellVehicleScreen()
 			cout << "|===============================================|";
 			gotoxy(52, --i);
 			cout << "|  Would you like to sell another?(Y/N):        |";
+			gotoxy(91, i);
 			string choice;
 			cin >> choice;
 			if (choice.compare("y") == 0 || choice.compare("Y") == 0)
@@ -260,6 +261,7 @@ void SellVehicleScreen::sellVehicleScreen()
 			cout << "|===============================================|";
 			gotoxy(50, --i);
 			cout << "|  Would you like to sell another?(Y/N):        |";
+			gotoxy(91, i);
 			string choice;
 			cin >> choice;
 			if (choice.compare("y") == 0 || choice.compare("Y") == 0)

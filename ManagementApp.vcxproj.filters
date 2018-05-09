@@ -8,70 +8,76 @@
     <Filter Include="Model">
       <UniqueIdentifier>{aa7723e2-01d6-4423-b860-26e19fa4bf47}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Model Headers">
-      <UniqueIdentifier>{c9e44ebf-ef7b-45ca-b891-db98b58be45d}</UniqueIdentifier>
+    <Filter Include="Views_ViewCarLot">
+      <UniqueIdentifier>{3ef6be5b-b9f0-4059-b537-c5b80086701f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="View">
-      <UniqueIdentifier>{3e9a200c-796f-40ee-9221-c9a52275e8c3}</UniqueIdentifier>
+    <Filter Include="Views_ViewCarLot_Headers">
+      <UniqueIdentifier>{fcf712e5-3eb8-4323-892d-4a53ea9ce027}</UniqueIdentifier>
     </Filter>
-    <Filter Include="View Headers">
+    <Filter Include="View_EditCarLot">
+      <UniqueIdentifier>{86fac86e-fee1-4324-a872-6f9c371abc28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View_EditCarLot_Headers">
+      <UniqueIdentifier>{0ec64043-d54f-41cc-b857-9b428b59001b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View_ViewCustomers">
+      <UniqueIdentifier>{653876a3-1b2b-4628-98ff-2a361327491c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View_ViewCusomters_Headers">
+      <UniqueIdentifier>{6f3b25cd-9be8-4aa8-9f96-5dec66601500}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View_SalesInvoiceScreen">
+      <UniqueIdentifier>{a651e115-7ca1-4a4b-99c0-91d8167085a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View_HomeScreen_Headers">
       <UniqueIdentifier>{183a8a26-f3e6-4d27-9942-9586fcddc7ca}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Main Controllers">
+    <Filter Include="View_HomeScreen">
+      <UniqueIdentifier>{3e9a200c-796f-40ee-9221-c9a52275e8c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model_Headers">
+      <UniqueIdentifier>{c9e44ebf-ef7b-45ca-b891-db98b58be45d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controllers_MainMenu">
       <UniqueIdentifier>{86ec15b7-6218-4af0-a5fb-1507fbbb3cff}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Main Controller Headers">
+    <Filter Include="Controllers_MainMenu_Headers">
       <UniqueIdentifier>{f93c55e5-9687-4509-b85b-2c1cd1e8a0b2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Edit Database Controllers">
-      <UniqueIdentifier>{2308721a-e46f-4f7d-aa5e-b165136b34d2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Edit Database Controller headers">
-      <UniqueIdentifier>{d0bd8e60-d63a-4457-8420-c5c34a3b20ee}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ReviewPage">
+    <Filter Include="View_ReviewPage">
       <UniqueIdentifier>{c6c54604-7320-42c4-a368-5a4cec492123}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ViewCarLotControllers">
+    <Filter Include="View_ReviewPage_Headers">
+      <UniqueIdentifier>{2d924676-2330-4755-aee3-d98643bda080}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controllers_EditDatabase_Headers">
+      <UniqueIdentifier>{d0bd8e60-d63a-4457-8420-c5c34a3b20ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controllers_EditDatabase">
+      <UniqueIdentifier>{2308721a-e46f-4f7d-aa5e-b165136b34d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View_SalesInvoiceScreen_Headers">
+      <UniqueIdentifier>{1a0b6fdc-6ced-4a3a-802b-063c8790c4d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controllers_ViewCarLot">
       <UniqueIdentifier>{677c258d-7dc8-4019-8b67-ceed4bb32551}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ViewCarLotControllersHeaders">
+    <Filter Include="Controllers_ViewCarLot_Headers">
       <UniqueIdentifier>{0f2bf197-dbcd-4fbd-b2bf-76cf4baec8c0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="SalesInvoiceControllers">
-      <UniqueIdentifier>{bcc81321-f1aa-40ca-ba34-485eded08d85}</UniqueIdentifier>
+    <Filter Include="Controllers_SalesInvoice">
+      <UniqueIdentifier>{6f97eeba-24bb-4b8e-b282-8132d73471f5}</UniqueIdentifier>
     </Filter>
-    <Filter Include="SalesInvoiceControllerHeaders">
-      <UniqueIdentifier>{0a65d6ad-98bd-4de0-a1d6-9ff9106c4b27}</UniqueIdentifier>
+    <Filter Include="Controllers_SalesInvoice_Headers">
+      <UniqueIdentifier>{9cd5ae2d-a88e-401c-bb89-669838675413}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="App.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PersonController.cpp">
-      <Filter>Main Controllers</Filter>
-    </ClCompile>
-    <ClCompile Include="PersonObj.cpp">
-      <Filter>Model</Filter>
-    </ClCompile>
     <ClCompile Include="HomeScreen.cpp">
-      <Filter>View</Filter>
-    </ClCompile>
-    <ClCompile Include="CreatePersonScreen.cpp">
-      <Filter>View</Filter>
-    </ClCompile>
-    <ClCompile Include="View_Cars_Main.cpp">
-      <Filter>View</Filter>
-    </ClCompile>
-    <ClCompile Include="Edit_Cars_Main.cpp">
-      <Filter>View</Filter>
-    </ClCompile>
-    <ClCompile Include="Sales_invoice_Main.cpp">
-      <Filter>View</Filter>
-    </ClCompile>
-    <ClCompile Include="Customer_Information_Main.cpp">
-      <Filter>View</Filter>
+      <Filter>View_HomeScreen</Filter>
     </ClCompile>
     <ClCompile Include="Utilities.cpp">
       <Filter>Source Files</Filter>
@@ -89,171 +95,204 @@
       <Filter>Model</Filter>
     </ClCompile>
     <ClCompile Include="EditDatabaseController.cpp">
-      <Filter>Main Controllers</Filter>
+      <Filter>Controllers_MainMenu</Filter>
     </ClCompile>
     <ClCompile Include="BuyVehicleController.cpp">
-      <Filter>Edit Database Controllers</Filter>
-    </ClCompile>
-    <ClCompile Include="Review_Page.cpp">
-      <Filter>ReviewPage</Filter>
+      <Filter>Controllers_EditDatabase</Filter>
     </ClCompile>
     <ClCompile Include="ViewCarLotController.cpp">
-      <Filter>Main Controllers</Filter>
-    </ClCompile>
-    <ClCompile Include="ViewAllCarsScreen.cpp">
-      <Filter>View</Filter>
+      <Filter>Controllers_MainMenu</Filter>
     </ClCompile>
     <ClCompile Include="ViewAllVehicleController.cpp">
-      <Filter>ViewCarLotControllers</Filter>
-    </ClCompile>
-    <ClCompile Include="SearchForVehiclesScreen.cpp">
-      <Filter>View</Filter>
+      <Filter>Controllers_ViewCarLot</Filter>
     </ClCompile>
     <ClCompile Include="SearchCarLotController.cpp">
-      <Filter>ViewCarLotControllers</Filter>
-    </ClCompile>
-    <ClCompile Include="SearchResultsScreen.cpp">
-      <Filter>View</Filter>
-    </ClCompile>
-    <ClCompile Include="BuyVehicleScreen.cpp">
-      <Filter>View</Filter>
-    </ClCompile>
-    <ClCompile Include="SellVehicleScreen.cpp">
-      <Filter>View</Filter>
+      <Filter>Controllers_ViewCarLot</Filter>
     </ClCompile>
     <ClCompile Include="SellVehicleController.cpp">
-      <Filter>Edit Database Controllers</Filter>
+      <Filter>Controllers_EditDatabase</Filter>
     </ClCompile>
     <ClCompile Include="SalesInvoiceController.cpp">
-      <Filter>Main Controllers</Filter>
-    </ClCompile>
-    <ClCompile Include="ViewVehiclesSoldScreen.cpp">
-      <Filter>View</Filter>
+      <Filter>Controllers_MainMenu</Filter>
     </ClCompile>
     <ClCompile Include="CustomerInformationController.cpp">
-      <Filter>Edit Database Controllers</Filter>
-    </ClCompile>
-    <ClCompile Include="ShowCustomerInformationScreen.cpp">
-      <Filter>View</Filter>
+      <Filter>Controllers_EditDatabase</Filter>
     </ClCompile>
     <ClCompile Include="ViewCustomerInformationController.cpp">
-      <Filter>Main Controllers</Filter>
-    </ClCompile>
-    <ClCompile Include="SearchCustomerInfoScreen.cpp">
-      <Filter>View</Filter>
+      <Filter>Controllers_MainMenu</Filter>
     </ClCompile>
     <ClCompile Include="CustomerSearchController.cpp">
-      <Filter>ViewCarLotControllers</Filter>
-    </ClCompile>
-    <ClCompile Include="CustomerSearchResultsScreen.cpp">
-      <Filter>View</Filter>
+      <Filter>Controllers_ViewCarLot</Filter>
     </ClCompile>
     <ClCompile Include="EditCustomerController.cpp">
-      <Filter>Edit Database Controllers</Filter>
+      <Filter>Controllers_EditDatabase</Filter>
+    </ClCompile>
+    <ClCompile Include="Review_Page.cpp">
+      <Filter>View_ReviewPage</Filter>
+    </ClCompile>
+    <ClCompile Include="Review_Page_Controller.cpp">
+      <Filter>View_ReviewPage</Filter>
+    </ClCompile>
+    <ClCompile Include="View_Cars_Main.cpp">
+      <Filter>Views_ViewCarLot</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewAllCarsScreen.cpp">
+      <Filter>Views_ViewCarLot</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchForVehiclesScreen.cpp">
+      <Filter>Views_ViewCarLot</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchResultsScreen.cpp">
+      <Filter>Views_ViewCarLot</Filter>
+    </ClCompile>
+    <ClCompile Include="Edit_Cars_Main.cpp">
+      <Filter>View_EditCarLot</Filter>
+    </ClCompile>
+    <ClCompile Include="SellVehicleScreen.cpp">
+      <Filter>View_EditCarLot</Filter>
+    </ClCompile>
+    <ClCompile Include="BuyVehicleScreen.cpp">
+      <Filter>View_EditCarLot</Filter>
+    </ClCompile>
+    <ClCompile Include="Customer_Information_Main.cpp">
+      <Filter>View_ViewCustomers</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomerSearchResultsScreen.cpp">
+      <Filter>View_ViewCustomers</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchCustomerInfoScreen.cpp">
+      <Filter>View_ViewCustomers</Filter>
+    </ClCompile>
+    <ClCompile Include="GrossProfitScreen.cpp">
+      <Filter>View_SalesInvoiceScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="Sales_invoice_Main.cpp">
+      <Filter>View_SalesInvoiceScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="TotalSalesScreen.cpp">
+      <Filter>View_SalesInvoiceScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="ShowCustomerInformationScreen.cpp">
+      <Filter>View_ViewCustomers</Filter>
+    </ClCompile>
+    <ClCompile Include="TotalExpensesScreen.cpp">
+      <Filter>View_SalesInvoiceScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="TotalSalesController.cpp">
+      <Filter>Controllers_SalesInvoice</Filter>
+    </ClCompile>
+    <ClCompile Include="TotalExpensesController.cpp">
+      <Filter>Controllers_SalesInvoice</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="PersonController.h">
-      <Filter>Main Controller Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="PersonObjH.h">
-      <Filter>Model Headers</Filter>
-    </ClInclude>
     <ClInclude Include="HomeScreen.h">
-      <Filter>View Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="CreatePersonScreen.h">
-      <Filter>View Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="Customer_Information_Main.h">
-      <Filter>View Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="Edit_Cars_Main.h">
-      <Filter>View Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="Sales_Invoice_Main.h">
-      <Filter>View Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="View_Cars_Main.h">
-      <Filter>View Headers</Filter>
+      <Filter>View_HomeScreen_Headers</Filter>
     </ClInclude>
     <ClInclude Include="Utilities.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="CarModel.h">
-      <Filter>Model Headers</Filter>
+      <Filter>Model_Headers</Filter>
     </ClInclude>
     <ClInclude Include="CustomerInfoModel.h">
-      <Filter>Model Headers</Filter>
+      <Filter>Model_Headers</Filter>
     </ClInclude>
     <ClInclude Include="CarPriceInfoModel.h">
-      <Filter>Model Headers</Filter>
+      <Filter>Model_Headers</Filter>
     </ClInclude>
     <ClInclude Include="CarInfoModel.h">
-      <Filter>Model Headers</Filter>
+      <Filter>Model_Headers</Filter>
     </ClInclude>
     <ClInclude Include="EditDatabaseController.h">
-      <Filter>Main Controller Headers</Filter>
+      <Filter>Controllers_MainMenu_Headers</Filter>
     </ClInclude>
     <ClInclude Include="BuyVehicleController.h">
-      <Filter>Edit Database Controller headers</Filter>
-    </ClInclude>
-    <ClInclude Include="Review_Page.h">
-      <Filter>ReviewPage</Filter>
+      <Filter>Controllers_EditDatabase_Headers</Filter>
     </ClInclude>
     <ClInclude Include="ViewCarLotController.h">
-      <Filter>Main Controller Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="ViewAllCarsScreen.h">
-      <Filter>View Headers</Filter>
+      <Filter>Controllers_MainMenu_Headers</Filter>
     </ClInclude>
     <ClInclude Include="ViewAllVehicleController.h">
-      <Filter>ViewCarLotControllersHeaders</Filter>
-    </ClInclude>
-    <ClInclude Include="SearchForVehiclesScreen.h">
-      <Filter>View Headers</Filter>
+      <Filter>Controllers_ViewCarLot_Headers</Filter>
     </ClInclude>
     <ClInclude Include="SearchCarLotController.h">
-      <Filter>ViewCarLotControllersHeaders</Filter>
-    </ClInclude>
-    <ClInclude Include="SearchResultsScreen.h">
-      <Filter>View Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="BuyVehicleScreen.h">
-      <Filter>View Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="SellVehicleScreen.h">
-      <Filter>View Headers</Filter>
+      <Filter>Controllers_ViewCarLot_Headers</Filter>
     </ClInclude>
     <ClInclude Include="SellVehicleController.h">
-      <Filter>Edit Database Controller headers</Filter>
+      <Filter>Controllers_EditDatabase_Headers</Filter>
     </ClInclude>
     <ClInclude Include="SalesInvoiceController.h">
-      <Filter>Main Controller Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="ViewVehiclesSoldScreen.h">
-      <Filter>View Headers</Filter>
+      <Filter>Controllers_MainMenu_Headers</Filter>
     </ClInclude>
     <ClInclude Include="CustomerInformationController.h">
-      <Filter>Edit Database Controller headers</Filter>
-    </ClInclude>
-    <ClInclude Include="ShowCustomerInformationScreen.h">
-      <Filter>View Headers</Filter>
+      <Filter>Controllers_EditDatabase_Headers</Filter>
     </ClInclude>
     <ClInclude Include="ViewCustomerInformationController.h">
-      <Filter>Main Controller Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="SearchCustomerInfoScreen.h">
-      <Filter>View Headers</Filter>
+      <Filter>Controllers_MainMenu_Headers</Filter>
     </ClInclude>
     <ClInclude Include="CustomerSearchController.h">
-      <Filter>ViewCarLotControllersHeaders</Filter>
-    </ClInclude>
-    <ClInclude Include="CustomerSearchResultsScreen.h">
-      <Filter>View Headers</Filter>
+      <Filter>Controllers_ViewCarLot_Headers</Filter>
     </ClInclude>
     <ClInclude Include="EditCustomerController.h">
-      <Filter>Edit Database Controller headers</Filter>
+      <Filter>Controllers_EditDatabase_Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="View_Cars_Main.h">
+      <Filter>Views_ViewCarLot_Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewAllCarsScreen.h">
+      <Filter>Views_ViewCarLot_Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchForVehiclesScreen.h">
+      <Filter>Views_ViewCarLot_Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchResultsScreen.h">
+      <Filter>Views_ViewCarLot_Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Edit_Cars_Main.h">
+      <Filter>View_EditCarLot_Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="BuyVehicleScreen.h">
+      <Filter>View_EditCarLot_Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SellVehicleScreen.h">
+      <Filter>View_EditCarLot_Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomerSearchResultsScreen.h">
+      <Filter>View_ViewCusomters_Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Customer_Information_Main.h">
+      <Filter>View_ViewCusomters_Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ShowCustomerInformationScreen.h">
+      <Filter>View_ViewCusomters_Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GrossProfitScreen.h">
+      <Filter>View_SalesInvoiceScreen_Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Sales_Invoice_Main.h">
+      <Filter>View_SalesInvoiceScreen_Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchCustomerInfoScreen.h">
+      <Filter>View_ViewCusomters_Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Review_Page.h">
+      <Filter>View_ReviewPage_Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Review_Page_Controller.h">
+      <Filter>View_ReviewPage_Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="TotalSalesScreen.h">
+      <Filter>View_SalesInvoiceScreen_Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="TotalSalesController.h">
+      <Filter>Controllers_SalesInvoice_Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="TotalExpensesScreen.h">
+      <Filter>View_SalesInvoiceScreen_Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="TotalExpensesController.h">
+      <Filter>Controllers_SalesInvoice_Headers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

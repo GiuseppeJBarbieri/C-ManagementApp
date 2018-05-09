@@ -40,7 +40,7 @@ void BuyVehicleController::addCarInfoModel(int id, string type, string driveLine
 void BuyVehicleController::addCarPriceInfoModel(int id, string pricePurchased, string setAskingPrice, string dateRecieved)
 {
 	ofstream fout;
-	fout.open("CarPriceInfo.txt", ios::app);
+	fout.open("CarInfoPrice.txt", ios::app);
 	if (!fout)
 	{
 		cerr << "Error in opening CarPriceInfoModel\n";

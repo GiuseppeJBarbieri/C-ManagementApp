@@ -25,7 +25,6 @@
     <ClCompile Include="CarInfoModel.cpp" />
     <ClCompile Include="CarModel.cpp" />
     <ClCompile Include="CarPriceInfoModel.cpp" />
-    <ClCompile Include="CreatePersonScreen.cpp" />
     <ClCompile Include="CustomerInfoModel.cpp" />
     <ClCompile Include="CustomerInformationController.cpp" />
     <ClCompile Include="CustomerSearchController.cpp" />
@@ -34,10 +33,10 @@
     <ClCompile Include="EditCustomerController.cpp" />
     <ClCompile Include="EditDatabaseController.cpp" />
     <ClCompile Include="Edit_Cars_Main.cpp" />
+    <ClCompile Include="GrossProfitScreen.cpp" />
     <ClCompile Include="HomeScreen.cpp" />
-    <ClCompile Include="PersonController.cpp" />
-    <ClCompile Include="PersonObj.cpp" />
     <ClCompile Include="Review_Page.cpp" />
+    <ClCompile Include="Review_Page_Controller.cpp" />
     <ClCompile Include="SalesInvoiceController.cpp" />
     <ClCompile Include="Sales_invoice_Main.cpp" />
     <ClCompile Include="SearchCarLotController.cpp" />
@@ -47,12 +46,15 @@
     <ClCompile Include="SellVehicleController.cpp" />
     <ClCompile Include="SellVehicleScreen.cpp" />
     <ClCompile Include="ShowCustomerInformationScreen.cpp" />
+    <ClCompile Include="TotalExpensesController.cpp" />
+    <ClCompile Include="TotalExpensesScreen.cpp" />
+    <ClCompile Include="TotalSalesController.cpp" />
+    <ClCompile Include="TotalSalesScreen.cpp" />
     <ClCompile Include="Utilities.cpp" />
     <ClCompile Include="ViewAllCarsScreen.cpp" />
     <ClCompile Include="ViewAllVehicleController.cpp" />
     <ClCompile Include="ViewCarLotController.cpp" />
     <ClCompile Include="ViewCustomerInformationController.cpp" />
-    <ClCompile Include="ViewVehiclesSoldScreen.cpp" />
     <ClCompile Include="View_Cars_Main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -61,7 +63,6 @@
     <ClInclude Include="CarInfoModel.h" />
     <ClInclude Include="CarModel.h" />
     <ClInclude Include="CarPriceInfoModel.h" />
-    <ClInclude Include="CreatePersonScreen.h" />
     <ClInclude Include="CustomerInfoModel.h" />
     <ClInclude Include="CustomerInformationController.h" />
     <ClInclude Include="CustomerSearchController.h" />
@@ -70,10 +71,10 @@
     <ClInclude Include="EditCustomerController.h" />
     <ClInclude Include="EditDatabaseController.h" />
     <ClInclude Include="Edit_Cars_Main.h" />
+    <ClInclude Include="GrossProfitScreen.h" />
     <ClInclude Include="HomeScreen.h" />
-    <ClInclude Include="PersonController.h" />
-    <ClInclude Include="PersonObjH.h" />
     <ClInclude Include="Review_Page.h" />
+    <ClInclude Include="Review_Page_Controller.h" />
     <ClInclude Include="SalesInvoiceController.h" />
     <ClInclude Include="Sales_Invoice_Main.h" />
     <ClInclude Include="SearchCarLotController.h" />
@@ -83,12 +84,15 @@
     <ClInclude Include="SellVehicleController.h" />
     <ClInclude Include="SellVehicleScreen.h" />
     <ClInclude Include="ShowCustomerInformationScreen.h" />
+    <ClInclude Include="TotalExpensesController.h" />
+    <ClInclude Include="TotalExpensesScreen.h" />
+    <ClInclude Include="TotalSalesController.h" />
+    <ClInclude Include="TotalSalesScreen.h" />
     <ClInclude Include="Utilities.h" />
     <ClInclude Include="ViewAllCarsScreen.h" />
     <ClInclude Include="ViewAllVehicleController.h" />
     <ClInclude Include="ViewCarLotController.h" />
     <ClInclude Include="ViewCustomerInformationController.h" />
-    <ClInclude Include="ViewVehiclesSoldScreen.h" />
     <ClInclude Include="View_Cars_Main.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

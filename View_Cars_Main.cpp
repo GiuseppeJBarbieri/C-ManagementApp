@@ -10,6 +10,7 @@ using namespace std;
 
 void View_Cars_Main::viewCarsMenu()
 {
+	system("color 06");
 	int i = 9;
 	system("CLS");
 	gotoxy(50, i++);

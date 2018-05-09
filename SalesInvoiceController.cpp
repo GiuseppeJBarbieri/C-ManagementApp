@@ -1,24 +1,21 @@
 #include "SalesInvoiceController.h"
-
+#include "TotalSalesController.h"
+#include "TotalExpensesController.h"
 using namespace std;
 
-
-void SalesInvoiceController::viewVehiclesSoled()
+double SalesInvoiceController::viewTotalSales()
 {
+	return TotalSalesController::getTotalSales();
 }
 
-void SalesInvoiceController::viewVehiclesBought()
+double SalesInvoiceController::viewTotalExpenses()
 {
+	return TotalExpensesController::getTotalExpenses();
 }
 
-void SalesInvoiceController::viewTotalSales()
+double SalesInvoiceController::viewGrossProfit()
 {
-}
-
-void SalesInvoiceController::viewTotalExpenses()
-{
-}
-
-void SalesInvoiceController::viewGrossProfit()
-{
+	double totalSales = SalesInvoiceController::viewTotalSales() - SalesInvoiceController::viewTotalExpenses();
+	return totalSales;
+	
 }

@@ -1,5 +1,7 @@
 #include "Sales_Invoice_Main.h"
-
+#include "TotalSalesScreen.h"
+#include "TotalExpensesScreen.h"
+#include "GrossProfitScreen.h"
 #include "Utilities.h"
 #include <string>
 #include <iostream>
@@ -8,6 +10,7 @@ using namespace std;
 
 void Sales_Invoice_Main::salesInvoiceMenu()
 {
+	system("color 0a");
 	int i = 9;
 	system("CLS");
 	gotoxy(50, i++);
@@ -19,27 +22,19 @@ void Sales_Invoice_Main::salesInvoiceMenu()
 	gotoxy(50, i++);
 	cout << "|                                               |";
 	gotoxy(50, i++);
-	cout << "|            [1]. View all Vehicles Sold        |";
+	cout << "|            [1]. Total Sales                   |";
 	gotoxy(50, i++);
 	cout << "|                                               |";
 	gotoxy(50, i++);
-	cout << "|            [2]. View all Vehicles Bought      |";
+	cout << "|            [2]. Total Expenses                |";
 	gotoxy(50, i++);
 	cout << "|                                               |";
 	gotoxy(50, i++);
-	cout << "|            [3]. Total Sales                   |";
+	cout << "|            [3]. Gross Profit                  |";
 	gotoxy(50, i++);
 	cout << "|                                               |";
 	gotoxy(50, i++);
-	cout << "|            [4]. Total Expenses                |";
-	gotoxy(50, i++);
-	cout << "|                                               |";
-	gotoxy(50, i++);
-	cout << "|            [5]. Gross Profit                  |";
-	gotoxy(50, i++);
-	cout << "|                                               |";
-	gotoxy(50, i++);
-	cout << "|            [6]. Exit                          |";
+	cout << "|            [4]. Exit                          |";
 	gotoxy(50, i++);
 	cout << "|                                               |";
 	gotoxy(50, i++);
@@ -56,21 +51,15 @@ void Sales_Invoice_Main::salesInvoiceMenu()
 	switch (selection)
 	{
 	case 1:		
-
+		TotalSalesScreen::showTotalSales();
 		break;
-	case 2:		
-
+	case 2:
+		TotalExpendesScreen::showTotalExpenses();
 		break;
-	case 3:		
-
+	case 3:
+		GrossProfitScreen::showGrossProfit();
 		break;
 	case 4:
-
-		break;
-	case 5:
-
-		break;
-	case 6:
 		break;
 	}
 	gotoxy(52, i);

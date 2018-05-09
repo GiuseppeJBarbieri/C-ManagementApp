@@ -5,6 +5,7 @@
 #include "Edit_Cars_Main.h"
 #include "Sales_Invoice_Main.h"
 #include "Customer_Information_Main.h"
+
 #include "Review_Page.h"
 #include <windows.h>
 
@@ -13,23 +14,27 @@
 
 using namespace std;
 
-//This will be the homescreen.
-//Here we will recieve a command from the user and determine what their trying to do.
 void HomeScreen::start()
 {
+	displayName();
+	system("CLS");
+	displayTitle();
 	system("CLS");	
+	View_Cars_Main * viewCarsScreen = new View_Cars_Main();
+	Edit_Cars_Main * editCarsScreen = new Edit_Cars_Main();
+	Sales_Invoice_Main * salesInvoiceScreen = new Sales_Invoice_Main();
+	Customer_Information_Main * customerInfoScreen = new Customer_Information_Main();
+	Review_Page * reviewPage = new Review_Page();
 
 	while (true)
 	{
-		displayName();
-		//CreatePersonScreen * createPerson = new CreatePersonScreen();
-		View_Cars_Main * viewCarsScreen = new View_Cars_Main();
-		Edit_Cars_Main * editCarsScreen = new Edit_Cars_Main();
-		Sales_Invoice_Main * salesInvoiceScreen = new Sales_Invoice_Main();
-		Customer_Information_Main * customerInfoScreen = new Customer_Information_Main();
-		Review_Page * reviewPage = new Review_Page();
-
+		system("color 7d");
+		system("CLS");
 		int i = 9;
+		gotoxy(50, i++);
+		cout << "|====================================================|";
+		gotoxy(50, i++); 
+		cout << "|              Kings Car Lot Application             |";
 		gotoxy(50, i++);
 		cout << "|====================================================|";
 		gotoxy(50, i++);
@@ -43,15 +48,15 @@ void HomeScreen::start()
 		gotoxy(50, i++);
 		cout << "|                                                    |";
 		gotoxy(50, i++);
-		cout << "|            [2]. Edit Vehicles                      |";
+		cout << "|            [2]. Edit Car Lot                       |";
 		gotoxy(50, i++);
 		cout << "|                                                    |";
 		gotoxy(50, i++);
-		cout << "|            [3]. Sales Invoices                     |";
+		cout << "|            [3]. View Customers                     |";
 		gotoxy(50, i++);
 		cout << "|                                                    |";
 		gotoxy(50, i++);
-		cout << "|            [4]. Customer Information               |";
+		cout << "|            [4]. Sales Invoice                      |";
 		gotoxy(50, i++);
 		cout << "|                                                    |";
 		gotoxy(50, i++);
@@ -75,8 +80,6 @@ void HomeScreen::start()
 		
 		switch (selection)
 		{
-			//in this case when the user enters v it will create a reference for the CreatePersonScreen.cpp file located in the view folder.
-			//It then starts the createPerosnInstructions.
 		case 1:
 			viewCarsScreen->viewCarsMenu();
 			gotoxy(50, 18);
@@ -87,13 +90,13 @@ void HomeScreen::start()
 			gotoxy(50, 18);
 			cout << "                                  ";
 			break;
-		case 3:			
-			salesInvoiceScreen->salesInvoiceMenu();
+		case 3:
+			customerInfoScreen->customerInfoMenu();
 			gotoxy(50, 18);
 			cout << "                                  ";
 			break;
 		case 4:
-			customerInfoScreen->customerInfoMenu();
+			salesInvoiceScreen->salesInvoiceMenu();
 			gotoxy(50, 18);
 			cout << "                                  ";
 			break;
@@ -102,9 +105,10 @@ void HomeScreen::start()
 			gotoxy(50, 18);
 			cout << "                                  ";
 			break;
-		case 6:
+		case 6:			
 			exit(0);
 			break;
+
 		}
 		
 		
@@ -115,9 +119,8 @@ void HomeScreen::start()
 void HomeScreen::displayName()
 {
 	system("mode 200");
-	//system("Color 12A");
 	system("cls");
-	system("color 5");
+	system("color 4F");
 
 	CONSOLE_FONT_INFOEX cfi;
 	cfi.cbSize = sizeof(cfi);
@@ -126,23 +129,76 @@ void HomeScreen::displayName()
 	cfi.dwFontSize.Y = 24;                  // Height
 	cfi.FontFamily = FF_DONTCARE;
 	cfi.FontWeight = FW_NORMAL;
-	std::wcscpy(cfi.FaceName, L"Consolas"); // Choose your font
+	wcscpy_s(cfi.FaceName, L"Consolas"); // Choose your font
 	SetCurrentConsoleFontEx(GetStdHandle(STD_OUTPUT_HANDLE), FALSE, &cfi);
 
-	
-	string art = "";
-	art += " _____ _                                  ______            _     _           _ \n";
-	art += "|  __ (_)                                 | ___ \          | |   (_)         (_)\n";
-	art += "| |  \/_ _   _ ___  ___ _ __  _ __   ___  | |_/ / __ _ _ __| |__  _  ___ _ __ _ \n";
-	art += "| | __| | | | / __|/ _ \ '_ \| '_ \ / _ \ | ___ \/ _` | '__| '_ \| |/ _ \ '__| |\n";
-	art += "| |_\\\ | |_| \__ \  __/ |_) | |_) |  __/ | |_/ / (_| | |  | |_) | |  __/ |  | |\n";
-	art += " \____/_|\__,_|___/\___| .__/| .__/ \___| \____/ \__,_|_|  |_.__/|_|\___|_|  |_|\n";
-	art += "                       | |   | |                                                \n";
-	art += "                       |_|   |_|                                                \n";
-	art += "																				\n";
+	string art = R"(
+    _____ _                                  ______            _     _           _ 
+   |  __ (_)                                 | ___ \          | |   (_)         (_)  
+   | |  \/_ _   _ ___  ___ _ __  _ __   ___  | |_/ / __ _ _ __| |__  _  ___ _ __ _ 
+   | | __| | | | / __|/ _ \ '_ \| '_ \ / _ \ | ___ \/ _` | '__| '_ \| |/ _ \ '__| |
+   | |_\ \ | |_| \__ \  __/ |_) | |_) |  __/ | |_/ / (_| | |  | |_) | |  __/ |  | |
+   \_____/_|\__,_|___/\___| .__/| .__/ \___| \____/\___,_|_|  |_.__/|_|\___|_|  |_|
+  ========================| |===| |=================================================                                               
+                          |_|   |_|                                                
+                    ___
+                   ( _ )  
+                   / _ \/\
+                  | (_>  <
+                   \___/\/                                                    
+                 ==========																		
+
+                                             ___            _           ______                     _       _       
+                                            / _ \          | |          | ___ \                   | |     (_)      
+                                           / /_\ \_ __   __| |_ __ ___  | |_/ / ___ _ __ _ __  ___| |_ ___ _ _ __  
+                                           |  _  | '_ \ / _` | '__/ _ \ | ___ \/ _ \ '__| '_ \/ __| __/ _ \ | '_ \ 
+                                           | | | | | | | (_| | | |  __/ | |_/ /  __/ |  | | | \__ \ ||  __/ | | | |
+                                           \_| |_/_| |_|\__,_|_|  \___| \____/ \___|_|  |_| |_|___/\__\___|_|_| |_|
+                                          ==========================================================================
+)";
 
 	cout << art;
 	cin.get();
-
 }
 
+void HomeScreen::displayTitle()
+{
+	system("color 30");
+	CONSOLE_FONT_INFOEX cfi;
+	cfi.cbSize = sizeof(cfi);
+	cfi.nFont = 0;
+	cfi.dwFontSize.X = 0;                   // Width of each character in the font
+	cfi.dwFontSize.Y = 24;                  // Height
+	cfi.FontFamily = FF_DONTCARE;
+	cfi.FontWeight = FW_NORMAL;
+	wcscpy_s(cfi.FaceName, L"Consolas"); // Choose your font
+	SetCurrentConsoleFontEx(GetStdHandle(STD_OUTPUT_HANDLE), FALSE, &cfi);
+
+
+	string art = R"(
+                                                                                                                                                          
+     *****                                                                     * ***                                    ***** *                           
+  ******                  *                                                  *  ****  *                              ******  *                       *    
+ **   *  *    **         ***                                                *  *  ****                              **   *  *                       **    
+*    *  *   **** *        *                                                *  **   **                              *    *  *                        **    
+    *  *     ****                                             ****        *  ***                   ***  ****           *  *              ****     ********
+   ** **    * **        ***     ***  ****        ****        * **** *    **   **           ****     **** **** *       ** **             * ***  * ******** 
+   ** **   *             ***     **** **** *    *  ***  *   **  ****     **   **          * ***  *   **   ****        ** **            *   ****     **    
+   ** *****               **      **   ****    *    ****   ****          **   **         *   ****    **               ** **           **    **      **    
+   ** ** ***              **      **    **    **     **      ***         **   **        **    **     **               ** **           **    **      **    
+   ** **   ***            **      **    **    **     **        ***       **   **        **    **     **               ** **           **    **      **    
+   *  **    ***           **      **    **    **     **          ***      **  **        **    **     **               *  **           **    **      **    
+      *       ***         **      **    **    **     **     ****  **       ** *      *  **    **     **                  *            **    **      **    
+  ****         ***        **      **    **    **     **    * **** *         ***     *   **    **     ***             ****           *  ******       **    
+ *  *****        ***  *   *** *   ***   ***    ********       ****           *******     ***** **     ***           *  *************    ****         **   
+*    ***           ***     ***     ***   ***     *** ***                       ***        ***   **                 *     *********                        
+*                                                     ***                                                          *                                      
+ **                                             ****   ***                                                          **                                    
+                                              *******  **                                                                                                 
+                                             *     ****                                                                                                   
+
+)";
+
+	cout << art;
+	cin.get();
+}

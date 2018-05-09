@@ -10,6 +10,7 @@ using namespace std;
 
 void Edit_Cars_Main::editCarsMenu()
 {
+	system("color 03");
 	int i = 9;
 	system("CLS");
 	gotoxy(50, i++);
@@ -52,7 +53,7 @@ void Edit_Cars_Main::editCarsMenu()
 		BuyVehicleScreen::buyVehicleScreen();
 		break;
 	case 3:
+
 		break;
 	}
-	gotoxy(52, i);
 }

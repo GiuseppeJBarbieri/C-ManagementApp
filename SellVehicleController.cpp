@@ -11,7 +11,7 @@ using namespace std;
 vector<CarPriceInfoModel> SellVehicleController::getCarPriceDB()
 {
 	ifstream fin;
-	fin.open("CarPriceInfo.txt");
+	fin.open("CarInfoPrice.txt");
 	if (!fin) {
 		cerr << "Error in opening the file" << endl;
 	}
@@ -78,7 +78,7 @@ void SellVehicleController::sellVehicle(string id, string date, string priceSold
 void SellVehicleController::rewriteFile(vector<CarPriceInfoModel> vehicleList)
 {
 	ofstream fout;
-	fout.open("CarPriceInfo.txt");
+	fout.open("CarInfoPrice.txt");
 	if (!fout)
 	{
 		cerr << "Error in opening file\n";

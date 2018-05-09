@@ -10,6 +10,7 @@ using namespace std;
 
 void Customer_Information_Main::customerInfoMenu()
 {
+	system("color 04");
 	int i = 9;
 	system("CLS");
 	gotoxy(50, i++);

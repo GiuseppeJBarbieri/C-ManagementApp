@@ -33,7 +33,7 @@ void SearchResultsScreen::showResultScreen(vector<CarModel> resultsList)
 	gotoxy(50, --i);
 	cout << "|  Would you like to search again?(Y/N):              |\n";
 	string choice;
-	gotoxy(91, i);
+	gotoxy(83, i);
 	cin >> choice;
 	if (choice.compare("y") == 0 || choice.compare("Y") == 0)
 	{
